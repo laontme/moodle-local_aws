@@ -443,7 +443,7 @@ namespace Aws;
  */
 class Sdk
 {
-    const VERSION = '3.133.32';
+    const VERSION = '3.134.6';
 
     /** @var array Arguments for creating clients */
     private $args;
