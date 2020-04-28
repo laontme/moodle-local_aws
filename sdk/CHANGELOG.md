@@ -1,5 +1,74 @@
 # CHANGELOG
 
+## 3.135.5 - 2020-04-27
+
+* `Aws\AccessAnalyzer` - This release adds support for inclusion of S3 Access Point policies in IAM Access Analyzer evaluation of S3 bucket access. IAM Access Analyzer now reports findings for buckets shared through access points and identifies the access point that permits access.
+* `Aws\DataExchange` - This release introduces AWS Data Exchange support for configurable encryption parameters when exporting data sets to Amazon S3. 
+* `Aws\DatabaseMigrationService` - Adding minimum replication engine version for describe-endpoint-types api.
+* `Aws\SageMaker` - Change to the input, ResourceSpec, changing EnvironmentArn to SageMakerImageArn. This affects the following preview APIs: CreateDomain, DescribeDomain, UpdateDomain, CreateUserProfile, DescribeUserProfile, UpdateUserProfile, CreateApp and DescribeApp.
+
+## 3.135.4 - 2020-04-24
+
+* `Aws\DLM` - Enable 1hour frequency in the schedule creation for Data LifeCycle Manager.
+* `Aws\ElasticInference` - This feature allows customers to describe the accelerator types and offerings on any region where Elastic Inference is available.
+* `Aws\IoT` - This release adds a new exception type to the AWS IoT SetV2LoggingLevel API.
+
+## 3.135.3 - 2020-04-23
+
+* `Aws\ApplicationAutoScaling` - This release supports Auto Scaling in Amazon Keyspaces for Apache Cassandra.
+* `Aws\Endpoint` - Fix for partition endpoint history logic for keys with hyphens.
+* `Aws\Firehose` - You can now deliver streaming data to an Amazon Elasticsearch Service domain in an Amazon VPC. You can now compress streaming data delivered to S3 using Hadoop-Snappy in addition to Gzip, Zip and Snappy formats.
+* `Aws\MediaPackageVod` - Adds tagging support for PackagingGroups, PackagingConfigurations, and Assets
+* `Aws\Pinpoint` - This release of the Amazon Pinpoint API enhances support for sending campaigns through custom channels to locations such as AWS Lambda functions or web applications. Campaigns can now use CustomDeliveryConfiguration and CampaignCustomMessage to configure custom channel settings for a campaign.
+* `Aws\RAM` - AWS Resource Access Manager (RAM) provides a new ListResourceTypes action. This action lets you list the resource types that can be shared using AWS RAM.
+* `Aws\RDS` - Adds support for AWS Local Zones, including a new optional parameter AvailabilityZoneGroup for the DescribeOrderableDBInstanceOptions operation.
+* `Aws\StorageGateway` - Added AutomaticTapeCreation APIs
+* `Aws\Transfer` - This release adds support for transfers over FTPS and FTP in and out of Amazon S3, which makes it easy to migrate File Transfer Protocol over SSL (FTPS) and FTP workloads to AWS, in addition to the existing support for Secure File Transfer Protocol (SFTP).
+
+## 3.135.2 - 2020-04-22
+
+* `Aws\CodeGuruReviewer` - Add support for code review and recommendation feedback APIs.
+* `Aws\ElasticsearchService` - This change adds a new field 'OptionalDeployment' to ServiceSoftwareOptions to indicate whether a service software update is optional or mandatory. If True, it indicates that the update is optional, and the service software is not automatically updated. If False, the service software is automatically updated after AutomatedUpdateDate.
+* `Aws\FMS` - This release is to support AWS Firewall Manager policy with Organizational Unit scope. 
+* `Aws\Redshift` - Amazon Redshift support for usage limits
+* `Aws\TranscribeStreamingService` - Adding ServiceUnavailableException as one of the expected exceptions
+
+## 3.135.1 - 2020-04-21
+
+* `Aws\CostExplorer` - Cost Explorer Rightsizing Recommendations integrates with Compute Optimizer and begins offering across instance family rightsizing recommendations, adding to existing support for within instance family rightsizing recommendations. 
+* `Aws\EMR` - Amazon EMR adds support for configuring a managed scaling policy for an Amazon EMR cluster. This enables automatic resizing of a cluster to optimize for job execution speed and reduced cluster cost.
+* `Aws\GuardDuty` - AWS GuardDuty now supports using AWS Organizations delegated administrators to create and manage GuardDuty master and member accounts. The feature also allows GuardDuty to be automatically enabled on associated organization accounts.
+* `Aws\Route53Domains` - You can now programmatically transfer domains between AWS accounts without having to contact AWS Support
+
+## 3.135.0 - 2020-04-20
+
+* `Aws\ApiGatewayV2` - You can now export an OpenAPI 3.0 compliant API definition file for Amazon API Gateway HTTP APIs using the Export API.
+* `Aws\CostExplorer` - Cost Categories API is now General Available with new dimensions and operations support. You can map costs by account name, service, and charge type dimensions as well as use contains, starts with, and ends with operations. Cost Categories can also be used in RI and SP coverage reports.
+* `Aws\Glue` - Added a new ConnectionType "KAFKA" and a ConnectionProperty "KAFKA_BOOTSTRAP_SERVERS" to support Kafka connection.
+* `Aws\IoTEvents` - API update that allows users to add AWS Iot SiteWise actions while creating Detector Model in AWS Iot Events
+* `Aws\Synthetics` - Introducing CloudWatch Synthetics. This is the first public release of CloudWatch Synthetics.
+
+## 3.134.8 - 2020-04-17
+
+* `Aws\FraudDetector` - Added support for a new rule engine execution mode. Customers will be able to configure their detector versions to evaluate all rules and return outcomes from all 'matched' rules in the GetPrediction API response. Added support for deleting Detectors (DeleteDetector) and Rule Versions (DeleteRuleVersion).
+* `Aws\OpsWorksCM` - Documentation updates for opsworkscm
+
+## 3.134.7 - 2020-04-16
+
+* `Aws\AugmentedAIRuntime` - This release updates Amazon Augmented AI ListHumanLoops and StartHumanLoop APIs.
+* `Aws\EC2` - Amazon EC2 now supports adding AWS resource tags for placement groups and key pairs, at creation time. The CreatePlacementGroup API will now return placement group information when created successfully. The DeleteKeyPair API now supports deletion by resource ID.
+* `Aws\Glue` - This release adds support for querying GetUserDefinedFunctions API without databaseName.
+* `Aws\IoTEvents` - API update that allows users to customize event action payloads, and adds support for Amazon DynamoDB actions.
+* `Aws\Lambda` - Sample code for AWS Lambda operations
+* `Aws\MediaConvert` - AWS Elemental MediaConvert now allows you to specify your input captions frame rate for SCC captions sources.
+* `Aws\MediaTailor` - AWS Elemental MediaTailor SDK now allows configuration of Avail Suppression.
+* `Aws\MigrationHub` - Adding ThrottlingException
+* `Aws\RDS` - This release adds support for Amazon RDS Proxy with PostgreSQL compatibility.
+* `Aws\SageMaker` - Amazon SageMaker now supports running training jobs on ml.g4dn and ml.c5n instance types. Amazon SageMaker supports in "IN" operation for Search now.
+* `Aws\SecurityHub` - Added a new BatchUpdateFindings action, which allows customers to update selected information about their findings. Security Hub customers use BatchUpdateFindings to track their investigation into a finding. BatchUpdateFindings is intended to replace the UpdateFindings action, which is deprecated.
+* `Aws\Snowball` - An update to the Snowball Edge Storage Optimized device has been launched. Like the previous version, it has 80 TB of capacity for data transfer. Now it has 40 vCPUs, 80 GiB, and a 1 TiB SATA SSD of memory for EC2 compatible compute. The 80 TB of capacity can also be used for EBS-like volumes for AMIs.
+* `Aws\imagebuilder` - This release includes support for additional OS Versions within EC2 Image Builder.
+
 ## 3.134.6 - 2020-04-08
 
 * `Aws\Chime` - feature: Chime: This release introduces the ability to tag Amazon Chime SDK meeting resources. You can use tags to organize and identify your resources for cost allocation. 
