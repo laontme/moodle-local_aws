@@ -1,5 +1,76 @@
 # CHANGELOG
 
+## 3.137.7 - 2020-05-11
+
+* `Aws\CodeGuruReviewer` - Add Bitbucket integration APIs
+* `Aws\EC2` - M6g instances are our next-generation general purpose instances powered by AWS Graviton2 processors
+* `Aws\kendra` - Amazon Kendra is now generally available. As part of general availability, we are launching * Developer edition * Ability to scale your Amazon Kendra index with capacity units * Support for new connectors * Support for new tagging API's * Support for Deleting data source * Metrics for data source sync operations * Metrics for query & storage utilization
+
+## 3.137.6 - 2020-05-08
+
+* `Aws\GuardDuty` - Documentation updates for GuardDuty
+* `Aws\ResourceGroupsTaggingAPI` - Documentation updates for resourcegroupstaggingapi
+* `Aws\SageMaker` - This release adds a new parameter (EnableInterContainerTrafficEncryption) to CreateProcessingJob API to allow for enabling inter-container traffic encryption on processing jobs.
+
+## 3.137.5 - 2020-05-07
+
+* `Aws\AppConfig` - The description of the AWS AppConfig GetConfiguration API action was amended to include important information about calling ClientConfigurationVersion when you configure clients to call GetConfiguration.
+* `Aws\CloudWatchLogs` - Amazon CloudWatch Logs now offers the ability to interact with Logs Insights queries via the new PutQueryDefinition, DescribeQueryDefinitions, and DeleteQueryDefinition APIs.
+* `Aws\CodeBuild` - Add COMMIT_MESSAGE enum for webhook filter types
+* `Aws\EC2` - Amazon EC2 now adds warnings to identify issues when creating a launch template or launch template version.
+* `Aws\Lightsail` - This release adds support for the following options in instance public ports: Specify source IP addresses, specify ICMP protocol like PING, and enable/disable the Lightsail browser-based SSH and RDP clients' access to your instance.
+* `Aws\Route53` - Amazon Route 53 now supports the EU (Milan) Region (eu-south-1) for latency records, geoproximity records, and private DNS for Amazon VPCs in that region.
+* `Aws\SSM` - This Patch Manager release supports creating patch baselines for Oracle Linux and Debian
+
+## 3.137.4 - 2020-05-06
+
+* `Aws\CodeStarconnections` - Added support for tagging resources in AWS CodeStar Connections
+* `Aws\ComprehendMedical` - New Batch Ontology APIs for ICD-10 and RxNorm will provide batch capability of linking the information extracted by Comprehend Medical to medical ontologies. The new ontology linking APIs make it easy to detect medications and medical conditions in unstructured clinical text and link them to RxNorm and ICD-10-CM codes respectively. This new feature can help you reduce the cost, time and effort of processing large amounts of unstructured medical text with high accuracy.
+
+## 3.137.3 - 2020-05-05
+
+* `Aws\EC2` - With this release, you can call ModifySubnetAttribute with two new parameters: MapCustomerOwnedIpOnLaunch and CustomerOwnedIpv4Pool, to map a customerOwnedIpv4Pool to a subnet. You will also see these two new fields in the DescribeSubnets response. If your subnet has a customerOwnedIpv4Pool mapped, your network interface will get an auto assigned customerOwnedIpv4 address when placed onto an instance.
+* `Aws\SSM` - AWS Systems Manager Parameter Store launches new data type to support aliases in EC2 APIs
+* `Aws\Support` - Documentation updates for support
+
+## 3.137.2 - 2020-05-04
+
+* `Aws\APIGateway` - Documentation updates for Amazon API Gateway
+* `Aws\EC2` - With this release, you can include enriched metadata in Amazon Virtual Private Cloud (Amazon VPC) flow logs published to Amazon CloudWatch Logs or Amazon Simple Storage Service (S3). Prior to this, custom format VPC flow logs enriched with additional metadata could be published only to S3. With this launch, we are also adding additional metadata fields that provide insights about the location such as AWS Region, AWS Availability Zone, AWS Local Zone, AWS Wavelength Zone, or AWS Outpost where the network interface where flow logs are captured exists. 
+* `Aws\S3Control` - Amazon S3 Batch Operations now supports Object Lock.
+
+## 3.137.1 - 2020-05-01
+
+* `Aws\EFS` - Change the TagKeys argument for UntagResource to a URL parameter to address an issue with the Java and .NET SDKs.
+* `Aws\SSM` - Added TimeoutSeconds as part of ListCommands API response.
+
+## 3.137.0 - 2020-04-30
+
+* `Aws\IoT` - AWS IoT Core released Fleet Provisioning for scalable onboarding of IoT devices to the cloud. This release includes support for customer's Lambda functions to validate devices during onboarding. Fleet Provisioning also allows devices to send Certificate Signing Requests (CSR) to AWS IoT Core for signing and getting a unique certificate. Lastly, AWS IoT Core added a feature to register the same certificate for multiple accounts in the same region without needing to register the certificate authority (CA).
+* `Aws\IoTEvents` - Doc only update to correct APIs and related descriptions
+* `Aws\Lambda` - Documentation updates for Lambda
+* `Aws\MediaConvert` - AWS Elemental MediaConvert SDK has added support for including AFD signaling in MXF wrapper.
+* `Aws\S3` - Adds change to S3 parsing logic to correctly interpret certain 200 responses with a functionally empty body as connection errors.
+* `Aws\Schemas` - Add support for resource policies for Amazon EventBridge Schema Registry, which is now generally available.
+* `Aws\StorageGateway` - Adding support for S3_INTELLIGENT_TIERING as a storage class option
+
+## 3.136.0 - 2020-04-29
+
+* `Aws\IoTSiteWise` - AWS IoT SiteWise is a managed service that makes it easy to collect, store, organize and monitor data from industrial equipment at scale. You can use AWS IoT SiteWise to model your physical assets, processes and facilities, quickly compute common industrial performance metrics, and create fully managed web applications to help analyze industrial equipment data, prevent costly equipment issues, and reduce production inefficiencies.
+* `Aws\ServiceDiscovery` - Documentation updates for servicediscovery
+* `Aws\TranscribeService` - With this release, you can now use Amazon Transcribe to create medical custom vocabularies and use them in both medical real-time streaming and medical batch transcription jobs.
+* `Aws\WAF` - This release add migration API for AWS WAF Classic ("waf" and "waf-regional"). The migration API will parse through your web ACL and generate a CloudFormation template into your S3 bucket. Deploying this template will create equivalent web ACL under new AWS WAF ("wafv2").
+* `Aws\WAFRegional` - This release add migration API for AWS WAF Classic ("waf" and "waf-regional"). The migration API will parse through your web ACL and generate a CloudFormation template into your S3 bucket. Deploying this template will create equivalent web ACL under new AWS WAF ("wafv2").
+
+## 3.135.6 - 2020-04-28
+
+* `Aws\ECR` - This release adds support for multi-architecture images also known as a manifest list
+* `Aws\KinesisVideo` - Add "GET_CLIP" to the list of supported API names for the GetDataEndpoint API.
+* `Aws\KinesisVideoArchivedMedia` - Add support for the GetClip API for retrieving media from a video stream in the MP4 format.
+* `Aws\MediaLive` - AWS Elemental MediaLive now supports several new features: enhanced VQ for H.264 (AVC) output encodes; passthrough of timed metadata and of Nielsen ID3 metadata in fMP4 containers in HLS outputs; the ability to generate a SCTE-35 sparse track without additional segmentation, in Microsoft Smooth outputs; the ability to select the audio from a TS input by specifying the audio track; and conversion of HDR colorspace in the input to an SDR colorspace in the output.
+* `Aws\Route53` - Amazon Route 53 now supports the Africa (Cape Town) Region (af-south-1) for latency records, geoproximity records, and private DNS for Amazon VPCs in that region.
+* `Aws\SSM` - SSM State Manager support for adding list association filter for Resource Group and manual mode of managing compliance for an association. 
+
 ## 3.135.5 - 2020-04-27
 
 * `Aws\AccessAnalyzer` - This release adds support for inclusion of S3 Access Point policies in IAM Access Analyzer evaluation of S3 bucket access. IAM Access Analyzer now reports findings for buckets shared through access points and identifies the access point that permits access.
