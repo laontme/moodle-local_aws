@@ -1,5 +1,67 @@
 # CHANGELOG
 
+## 3.138.7 - 2020-05-22
+
+* `Aws\AutoScaling` - Documentation updates for Amazon EC2 Auto Scaling
+* `Aws\IoTSiteWise` - This release adds support for the standard deviation auto-computed aggregate and improved support for portal logo images in SiteWise.
+
+## 3.138.6 - 2020-05-21
+
+* `Aws\CodeBuild` - CodeBuild adds support for tagging with report groups
+* `Aws\EC2` - From this release onwards ProvisionByoipCidr publicly supports IPv6. Updated ProvisionByoipCidr API to support tags for public IPv4 and IPv6 pools. Added NetworkBorderGroup to the DescribePublicIpv4Pools response.
+* `Aws\S3` - Deprecates unusable input members bound to Content-MD5 header. Updates example and documentation.
+* `Aws\Synthetics` - AWS CloudWatch Synthetics now supports configuration of allocated memory for a canary.
+
+## 3.138.5 - 2020-05-20
+
+* `Aws\AppMesh` - List APIs for all resources now contain additional information: when a resource was created, last updated, and its current version number.
+* `Aws\ApplicationAutoScaling` - Documentation updates for Application Auto Scaling
+* `Aws\Backup` - This release allows customers to enable or disable AWS Backup support for an AWS resource type. This release also includes new APIs, update-region-settings and describe-region-settings, which can be used to opt in to a specific resource type. For all current AWS Backup customers, the default settings enable support for EBS, EC2, StorageGateway, EFS, DDB and RDS resource types. 
+* `Aws\Chime` - Amazon Chime enterprise account administrators can now set custom retention policies on chat data in the Amazon Chime application.
+* `Aws\CodeDeploy` - Amazon ECS customers using application and network load balancers can use CodeDeploy BlueGreen hook to invoke a CloudFormation stack update. With this update you can view CloudFormation deployment and target details via existing APIs and use your stack Id to list or delete all deployments associated with the stack.
+* `Aws\MediaLive` - AWS Elemental MediaLive now supports the ability to ingest the content that is streaming from an AWS Elemental Link device: https://aws.amazon.com/medialive/features/link/. This release also adds support for SMPTE-2038 and input state waiters.
+* `Aws\S3` - Fixes incorrect host for dualstack and accelerate endpoints in non-AWS partitions.
+* `Aws\SecurityHub` - For findings related to controls, the finding information now includes the reason behind the current status of the control. A new field for the findings original severity allows finding providers to use the severity values from the system they use to assign severity.
+* `Aws\TranscribeStreamingService` - This release adds support for vocabulary filtering in streaming with which you can filter unwanted words from the real-time transcription results. Visit https://docs.aws.amazon.com/transcribe/latest/dg/how-it-works.html to learn more.
+
+## 3.138.4 - 2020-05-19
+
+* `Aws\Chime` - You can now receive Voice Connector call events through SNS or SQS.
+* `Aws\EC2` - This release adds support for Federated Authentication via SAML-2.0 in AWS ClientVPN.
+* `Aws\Health` - Feature: Health: AWS Health added a new field to differentiate Public events from Account-Specific events in the API request and response. Visit https://docs.aws.amazon.com/health/latest/APIReference/API_Event.html to learn more.
+* `Aws\TranscribeService` - Documentation updates for Amazon Transcribe.
+
+## 3.138.3 - 2020-05-18
+
+* `Aws\Chime` - Amazon Chime now supports redacting chat messages.
+* `Aws\DynamoDB` - Documentation updates for dynamodb 
+* `Aws\EC2` - This release changes the RunInstances CLI and SDK's so that if you do not specify a client token, a randomly generated token is used for the request to ensure idempotency.
+* `Aws\ECS` - This release adds support for specifying environment files to add environment variables to your containers.
+* `Aws\Macie2` - Documentation updates for Amazon Macie
+* `Aws\QLDB` - Amazon QLDB now supports Amazon Kinesis data streams. You can now emit QLDB journal data, via the new QLDB Streams feature, directly to Amazon Kinesis supporting event processing and analytics among related use cases.
+
+## 3.138.2 - 2020-05-15
+
+* `Aws\CloudFormation` - This release adds support for the following features: 1. DescribeType and ListTypeVersions APIs now output a field IsDefaultVersion, indicating if a version is the default version for its type; 2. Add StackRollbackComplete waiter feature to wait until stack status is UPDATE_ROLLBACK_COMPLETE; 3. Add paginators in DescribeAccountLimits, ListChangeSets, ListStackInstances, ListStackSetOperationResults, ListStackSetOperations, ListStackSets APIs.
+* `Aws\ECR` - This release adds support for specifying an image manifest media type when pushing a manifest to Amazon ECR.
+* `Aws\Glue` - Starting today, you can stop the execution of Glue workflows that are running. AWS Glue workflows are directed acyclic graphs (DAGs) of Glue triggers, crawlers and jobs. Using a workflow, you can design a complex multi-job extract, transform, and load (ETL) activity that AWS Glue can execute and track as single entity. 
+* `Aws\STS` - API updates for STS
+
+## 3.138.1 - 2020-05-14
+
+* `Aws\EC2` - Amazon EC2 now supports adding AWS resource tags for associations between VPCs and local gateways, at creation time.
+* `Aws\imagebuilder` - This release adds a new parameter (SupportedOsVersions) to the Components API. This parameter lists the OS versions supported by a component.
+
+## 3.138.0 - 2020-05-13
+
+* `Aws\ElastiCache` - Amazon ElastiCache now supports auto-update of ElastiCache clusters after the "recommended apply by date" of service update has passed. ElastiCache will use your maintenance window to schedule the auto-update of applicable clusters. For more information, see https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Self-Service-Updates.html and https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Self-Service-Updates.html
+* `Aws\Macie2` - This release introduces a new major version of the Amazon Macie API. You can use this version of the API to develop tools and applications that interact with the new Amazon Macie.
+
+## 3.137.8 - 2020-05-12
+
+* `Aws\IoTSiteWise` - Documentation updates for iot-bifrost
+* `Aws\WorkMail` - Minor API fixes and updates to the documentation.
+
 ## 3.137.7 - 2020-05-11
 
 * `Aws\CodeGuruReviewer` - Add Bitbucket integration APIs
