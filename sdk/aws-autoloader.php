@@ -1,6 +1,8 @@
 <?php
 
 $mapping = array(
+    'Symfony\Polyfill\IntlIdn\Idn' => __DIR__ . '/Symfony/Polyfill/IntlIdn/Idn.php',
+    'Symfony\Polyfill\IntlIdn\bootstrap' => __DIR__ . '/Symfony/Polyfill/IntlIdn/bootstrap.php',
     'GuzzleHttp\MessageFormatter' => __DIR__ . '/GuzzleHttp/MessageFormatter.php',
     'GuzzleHttp\Exception\GuzzleException' => __DIR__ . '/GuzzleHttp/Exception/GuzzleException.php',
     'GuzzleHttp\Exception\SeekException' => __DIR__ . '/GuzzleHttp/Exception/SeekException.php',
@@ -1417,3 +1419,4 @@ require_once __DIR__ . '/GuzzleHttp/functions_include.php';
 require_once __DIR__ . '/GuzzleHttp/Psr7/functions_include.php';
 require_once __DIR__ . '/GuzzleHttp/Promise/functions_include.php';
 require_once __DIR__ . '/JmesPath/JmesPath.php';
+require_once __DIR__ . '/Symfony/Polyfill/IntlIdn/bootstrap.php';
