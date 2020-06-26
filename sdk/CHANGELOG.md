@@ -1,5 +1,159 @@
 # CHANGELOG
 
+## 3.143.1 - 2020-06-25
+
+* `Aws\EC2` - Added support for tag-on-create for Host Reservations in Dedicated Hosts. You can now specify tags when you create a Host Reservation for a Dedicated Host. For more information about tagging, see AWS Tagging Strategies.
+* `Aws\Glue` - This release adds new APIs to support column level statistics in AWS Glue Data Catalog
+
+## 3.143.0 - 2020-06-24
+
+* `Aws\Amplify` - This release of AWS Amplify Console introduces support for automatically creating custom subdomains for branches based on user-defined glob patterns, as well as automatically cleaning up Amplify branches when their corresponding git branches are deleted.
+* `Aws\AutoScaling` - Documentation updates for Amazon EC2 Auto Scaling.
+* `Aws\Backup` - Customers can now manage and monitor their backups in a policied manner across their AWS accounts, via an integration between AWS Backup and AWS Organizations
+* `Aws\CodeCommit` - This release introduces support for reactions to CodeCommit comments. Users will be able to select from a pre-defined list of emojis to express their reaction to any comments.
+* `Aws\EMR` - Amazon EMR customers can now set allocation strategies for On-Demand and Spot instances in their EMR clusters with instance fleets. These allocation strategies use real-time capacity insights to provision clusters faster and make the most efficient use of available spare capacity to allocate Spot instances to reduce interruptions. 
+* `Aws\FSx` - This release adds the capability to take highly-durable, incremental backups of your FSx for Lustre persistent file systems. This capability makes it easy to further protect your file system data and to meet business and regulatory compliance requirements.
+* `Aws\Honeycode` - Introducing Amazon Honeycode - a fully managed service that allows you to quickly build mobile and web apps for teams without programming.
+* `Aws\IAM` - Documentation updates for iam
+* `Aws\Organizations` - This release adds support for a new backup policy type for AWS Organizations.
+
+## 3.142.8 - 2020-06-23
+
+* `Aws\MediaTailor` - AWS Elemental MediaTailor SDK now allows configuration of Bumper.
+* `Aws\Organizations` - Added a new error message to support the requirement for a Business License on AWS accounts in China to create an organization.
+
+## 3.142.7 - 2020-06-22
+
+* `Aws\EC2` - This release adds Tag On Create feature support for the ImportImage, ImportSnapshot, ExportImage and CreateInstanceExportTask APIs.
+* `Aws\EMR` - Adding support for MaximumCoreCapacityUnits parameter for EMR Managed Scaling. It allows users to control how many units/nodes are added to the CORE group/fleet. Remaining units/nodes are added to the TASK groups/fleet in the cluster.
+* `Aws\RDS` - Added paginators for various APIs.
+* `Aws\Rekognition` - This update adds the ability to detect black frames, end credits, shots, and color bars in stored videos
+* `Aws\SQS` - AWS SQS adds pagination support for ListQueues and ListDeadLetterSourceQueues APIs
+
+## 3.142.6 - 2020-06-19
+
+* `Aws\EC2` - Adds support to tag elastic-gpu on the RunInstances api
+* `Aws\ElastiCache` - Documentation updates for elasticache
+* `Aws\MediaLive` - AWS Elemental MediaLive now supports Input Prepare schedule actions. This feature improves existing input switching by allowing users to prepare an input prior to switching to it.
+* `Aws\OpsWorksCM` - Documentation updates for AWS OpsWorks CM.
+
+## 3.142.5 - 2020-06-18
+
+* `Aws\MarketplaceMetering` - Documentation updates for meteringmarketplace
+* `Aws\MediaConvert` - AWS Elemental MediaConvert SDK has added support for NexGuard FileMarker SDK, which allows NexGuard partners to watermark proprietary content in mezzanine and OTT streaming contexts.
+* `Aws\RDS` - Adding support for global write forwarding on secondary clusters in an Aurora global database.
+* `Aws\Route53` - Added a new ListHostedZonesByVPC API for customers to list all the private hosted zones that a specified VPC is associated with.
+* `Aws\SSM` - Added offset support for specifying the number of days to wait after the date and time specified by a CRON expression before running the maintenance window.
+* `Aws\SesV2` - You can now configure Amazon SES to send event notifications when the delivery of an email is delayed because of a temporary issue. For example, you can receive a notification if the recipient's inbox is full, or if there's a temporary problem with the receiving email server.
+* `Aws\Support` - Documentation updates for support
+
+## 3.142.4 - 2020-06-17
+
+* `Aws\AppMesh` - Adds support for route and virtual node listener timeouts.
+* `Aws\EC2` - nvmeSupport added to DescribeInstanceTypes API
+* `Aws\Macie2` - This is a documentation-only update to the Amazon Macie API. This update contains miscellaneous editorial improvements to various API descriptions.
+* `Aws\Route53` - Add PriorRequestNotComplete exception to AssociateVPCWithHostedZone API
+* `Aws\Snowball` - AWS Snowcone is a portable, rugged and secure device for edge computing and data transfer. You can use Snowcone to collect, process, and move data to AWS, either offline by shipping the device to AWS or online by using AWS DataSync. With 2 CPUs and 4 GB RAM of compute and 8 TB of storage, Snowcone can run edge computing workloads and store data securely. Snowcone's small size (8.94" x 5.85" x 3.25" / 227 mm x 148.6 mm x 82.65 mm) allows you to set it next to machinery in a factory. Snowcone weighs about 4.5 lbs. (2 kg), so you can carry one in a backpack, use it with battery-based operation, and use the Wi-Fi interface to gather sensor data. Snowcone supports a file interface with NFS support. 
+
+## 3.142.3 - 2020-06-16
+
+* `Aws\AutoScaling` - Introducing instance refresh, a feature that helps you update all instances in an Auto Scaling group in a rolling fashion (for example, to apply a new AMI or instance type). You can control the pace of the refresh by defining the percentage of the group that must remain running/healthy during the replacement process and the time for new instances to warm up between replacements.
+* `Aws\CloudFront` - Documentation updates for CloudFront
+* `Aws\DataExchange` - This release fixes a bug in the AWS Data Exchange Python and NodeJS SDKs. The 'KmsKeyArn' field in the create-job API was configured to be required instead of optional. We updated this field to be optional in this release.
+* `Aws\Lambda` - Adds support for using Amazon Elastic File System (persistent storage) with AWS Lambda. This enables customers to share data across function invocations, read large reference data files, and write function output to a persistent and shared store.
+* `Aws\Polly` - Amazon Polly adds new US English child voice - Kevin. Kevin is available as Neural voice only.
+* `Aws\QLDB` - Documentation updates for Amazon QLDB
+
+## 3.142.2 - 2020-06-15
+
+* `Aws\AlexaForBusiness` - Adding support for optional tags in CreateBusinessReportSchedule, CreateProfile and CreateSkillGroup APIs
+* `Aws\AppConfig` - This release adds a hosted configuration source provider. Customers can now store their application configurations directly in AppConfig, without the need for an external configuration source.
+* `Aws\Chime` - feature: Chime: This release introduces the ability to create an AWS Chime SDK meeting with attendees.
+* `Aws\CognitoIdentityProvider` - Updated all AuthParameters to be sensitive.
+* `Aws\IoT` - Added support for job executions rollout configuration, job abort configuration, and job executions timeout configuration for AWS IoT Over-the-Air (OTA) Update Feature.
+
+## 3.142.1 - 2020-06-12
+
+* `Aws\APIGateway` - Documentation updates for Amazon API Gateway
+* `Aws\CloudFormation` - The following parameters now return the organization root ID or organizational unit (OU) IDs that you specified for DeploymentTargets: the OrganizationalUnitIds parameter on StackSet and the OrganizationalUnitId parameter on StackInstance, StackInstanceSummary, and StackSetOperationResultSummary
+* `Aws\Glue` - You can now choose to crawl the entire table or just a sample of records in DynamoDB when using AWS Glue crawlers. Additionally, you can also specify a scanning rate for crawling DynamoDB tables.
+* `Aws\StorageGateway` - Display EndpointType in DescribeGatewayInformation
+
+## 3.142.0 - 2020-06-11
+
+* `Aws\Crypto` - This implements a pure-PHP implementation of GMAC, which, when combined with OpenSSL's AES implementations (both AES-ECB and AES-CTR) allows the support of AES-GCM on PHP versions older than 7.1.
+* `Aws\DynamoDb` - Marshal empty strings.
+* `Aws\ECS` - This release adds support for deleting capacity providers.
+* `Aws\IoTDataPlane` - As part of this release, we are introducing a new feature called named shadow, which extends the capability of AWS IoT Device Shadow to support multiple shadows for a single IoT device. With this release, customers can store different device state data into different shadows, and as a result access only the required state data when needed and reduce individual shadow size.
+* `Aws\LexModelBuildingService` - This change adds the built-in AMAZON.KendraSearchIntent that enables integration with Amazon Kendra.
+* `Aws\imagebuilder` - EC2 Image Builder now supports specifying a custom working directory for your build and test workflows. In addition, Image Builder now supports defining tags that are applied to ephemeral resources created by EC2 Image Builder as part of the image creation workflow. 
+
+## 3.141.0 - 2020-06-10
+
+* `Aws\` - Made the getSignatureProvider method public.
+* `Aws\AppConfig` - This release allows customers to choose from a list of predefined deployment strategies while starting deployments.
+* `Aws\CodeArtifact` - Added support for AWS CodeArtifact.
+* `Aws\ComputeOptimizer` - Compute Optimizer supports exporting recommendations to Amazon S3.
+* `Aws\DLM` - Reducing the schedule name of DLM Lifecycle policy from 500 to 120 characters. 
+* `Aws\EC2` - New C6g instances powered by AWS Graviton2 processors and ideal for running advanced, compute-intensive workloads; New R6g instances powered by AWS Graviton2 processors and ideal for running memory-intensive workloads.
+* `Aws\Lightsail` - Documentation updates for lightsail
+* `Aws\Macie2` - This release of the Amazon Macie API removes support for the ArchiveFindings and UnarchiveFindings operations. This release also adds UNKNOWN as an encryption type for S3 bucket metadata.
+* `Aws\ServiceCatalog` - Service Catalog Documentation Update for Integration with AWS Organizations Delegated Administrator feature
+* `Aws\Shield` - Corrections to the supported format for contact phone numbers and to the description for the create subscription action.
+
+## 3.140.4 - 2020-06-09
+
+* `Aws\Transfer` - This release updates the API so customers can test use of Source IP to allow, deny or limit access to data in their S3 buckets after integrating their identity provider.
+
+## 3.140.3 - 2020-06-08
+
+* `Aws\ServiceDiscovery` - Added support for tagging Service and Namespace type resources in Cloud Map
+* `Aws\Shield` - This release adds the option for customers to identify a contact name and method that the DDoS Response Team can proactively engage when a Route 53 Health Check that is associated with a Shield protected resource fails.
+
+## 3.140.2 - 2020-06-05
+
+* `Aws\APIGateway` - Amazon API Gateway now allows customers of REST APIs to skip trust chain validation for backend server certificates for HTTP and VPC Link Integration. This feature enables customers to configure their REST APIs to integrate with backends that are secured with certificates vended from private certificate authorities (CA) or certificates that are self-signed.
+* `Aws\CloudFront` - Amazon CloudFront adds support for configurable origin connection attempts and origin connection timeout.
+* `Aws\ElasticBeanstalk` - These API changes enable an IAM user to associate an operations role with an Elastic Beanstalk environment, so that the IAM user can call Elastic Beanstalk actions without having access to underlying downstream AWS services that these actions call.
+* `Aws\Personalize` - [Personalize] Adds ability to create and apply filters.
+* `Aws\PersonalizeRuntime` - [Personalize] Adds ability to apply filter to real-time recommendations
+* `Aws\Pinpoint` - This release enables additional functionality for the Amazon Pinpoint journeys feature. With this release, you can send messages through additional channels, including SMS, push notifications, and custom channels.
+* `Aws\SageMakerRuntime` - You can now specify the production variant to send the inference request to, when invoking a SageMaker Endpoint that is running two or more variants.
+* `Aws\ServiceCatalog` - This release adds support for DescribeProduct and DescribeProductAsAdmin by product name, DescribeProvisioningArtifact by product name or provisioning artifact name, returning launch paths as part of DescribeProduct output and adds maximum length for provisioning artifact name and provisioning artifact description.
+
+## 3.140.1 - 2020-06-04
+
+* `Aws\EC2` - New C5a instances, the latest generation of EC2's compute-optimized instances featuring AMD's 2nd Generation EPYC processors. C5a instances offer up to 96 vCPUs, 192 GiB of instance memory, 20 Gbps in Network bandwidth; New G4dn.metal bare metal instance with 8 NVIDIA T4 GPUs.
+* `Aws\Lightsail` - This release adds the BurstCapacityPercentage and BurstCapacityTime instance metrics, which allow you to track the burst capacity available to your instance.
+* `Aws\MarketplaceMetering` - Documentation updates for meteringmarketplace
+* `Aws\MediaPackageVod` - You can now restrict direct access to AWS Elemental MediaPackage by securing requests for VOD content using CDN authorization. With CDN authorization, content requests require a specific HTTP header and authorization code.
+* `Aws\SSM` - SSM State Manager support for executing an association only at specified CRON schedule after creating/updating an association.
+
+## 3.140.0 - 2020-06-03
+
+* `Aws\Build\Docs` - Tweak docs redirect logic to use uid if possible.
+* `Aws\DirectConnect` - This release supports the virtual interface failover test, which allows you to verify that traffic routes over redundant virtual interfaces when you bring your primary virtual interface out of service.
+* `Aws\ElastiCache` - This release improves the Multi-AZ feature in ElastiCache by adding a separate flag and proper validations.
+* `Aws\ElasticsearchService` - Amazon Elasticsearch Service now offers support for cross-cluster search, enabling you to perform searches, aggregations, and visualizations across multiple Amazon Elasticsearch Service domains with a single query or from a single Kibana interface. New feature includes the ability to setup connection, required to perform cross-cluster search, between domains using an approval workflow.
+* `Aws\Glue` - Adding databaseName in the response for GetUserDefinedFunctions() API.
+* `Aws\IAM` - GenerateServiceLastAccessedDetails will now return ActionLastAccessed details for certain S3 control plane actions
+* `Aws\MediaConvert` - AWS Elemental MediaConvert SDK has added support for the encoding of VP8 or VP9 video in WebM container with Vorbis or Opus audio.
+* `Aws\S3` - Modified Content-MD5 checksum logic to use modeled httpChecksumRequired trait instead of a hard-coded list of operations.
+
+## 3.139.1 - 2020-06-02
+
+* `Aws\GuardDuty` - Amazon GuardDuty findings now include S3 bucket details under the resource section if an S3 Bucket was one of the affected resources
+
+## 3.139.0 - 2020-06-01
+
+* `Aws\Athena` - This release adds support for connecting Athena to your own Apache Hive Metastores in addition to the AWS Glue Data Catalog. For more information, please see https://docs.aws.amazon.com/athena/latest/ug/connect-to-data-source-hive.html
+* `Aws\EMR` - Amazon EMR now supports encrypting log files with AWS Key Management Service (KMS) customer managed keys.
+* `Aws\EndpointDiscovery` - Endpoint discovery behavior is modified to be enabled by default if any operation in a service requires it. Disabling endpoint discovery in configuration will disable it even for required operations.
+* `Aws\FSx` - New capabilities to update storage capacity and throughput capacity of your file systems, providing the flexibility to grow file storage and to scale up or down the available performance as needed to meet evolving storage needs over time.
+* `Aws\KMS` - AWS Key Management Service (AWS KMS): If the GenerateDataKeyPair or GenerateDataKeyPairWithoutPlaintext APIs are called on a CMK in a custom key store (origin == AWS_CLOUDHSM), they return an UnsupportedOperationException. If a call to UpdateAlias causes a customer to exceed the Alias resource quota, the UpdateAlias API returns a LimitExceededException.
+* `Aws\SageMaker` - We are releasing HumanTaskUiArn as a new parameter in CreateLabelingJob and RenderUiTemplate which can take an ARN for a system managed UI to render a task. 
+* `Aws\WorkLink` - Amazon WorkLink now supports resource tagging for fleets.
+
 ## 3.138.10 - 2020-05-28
 
 * `Aws\Kafka` - New APIs for upgrading the Apache Kafka version of a cluster and to find out compatible upgrade paths

@@ -10,9 +10,6 @@ services:
 
 addons:
   postgresql: "9.6"
-  apt:
-    packages:
-      - openjdk-8-jre-headless
 
 cache:
   directories:
@@ -30,6 +27,7 @@ jobs:
   include:
     - env: DB=pgsql MOODLE_BRANCH=MOODLE_37_STABLE
     - env: DB=pgsql MOODLE_BRANCH=MOODLE_38_STABLE
+    - env: DB=pgsql MOODLE_BRANCH=MOODLE_39_STABLE
     - php: 7.4
       env: DB=pgsql MOODLE_BRANCH=master
 
