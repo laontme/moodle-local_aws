@@ -1,5 +1,40 @@
 # CHANGELOG
 
+## 3.150.2 - 2020-08-20
+
+* `Aws\ApiGatewayV2` - Customers can now create Amazon API Gateway HTTP APIs that route requests to AWS AppConfig, Amazon EventBridge, Amazon Kinesis Data Streams, Amazon SQS, and AWS Step Functions.
+* `Aws\Chime` - Documentation updates for chime
+* `Aws\FSx` - Documentation updates for Amazon FSx
+
+## 3.150.1 - 2020-08-19
+
+* `Aws\IVS` - Amazon Interactive Video Service (IVS) now offers customers the ability to create private channels, allowing customers to restrict their streams by channel or viewer.
+* `Aws\LakeFormation` - Adding additional field in ListPermissions API response to return RAM resource share ARN if a resource were shared through AWS RAM service.
+* `Aws\Organizations` - Minor documentation updates for AWS Organizations
+* `Aws\ServiceCatalog` - Enhance SearchProvisionedProducts API to allow queries using productName and provisioningArtifactName. Added lastProvisioningRecordId and lastSuccessfulRecordId to Read ProvisionedProduct APIs
+* `Aws\StorageGateway` - Added WORM, tape retention lock, and custom pool features for virtual tapes.
+* `Aws\TranscribeStreamingService` - Amazon Transcribe and Amazon Transcribe Medical now enable you to identify different speakers in your real-time streams with speaker identification.
+
+## 3.150.0 - 2020-08-18
+
+* `Aws\CodeBuild` - Documentation updates for codebuild
+* `Aws\CognitoIdentityProvider` - Adding the option to use a service linked role to publish events to Pinpoint.
+* `Aws\DataSync` - DataSync support for filters as input arguments to the ListTasks and ListLocations API calls.
+* `Aws\IdentityStore` - AWS Single Sign-On (SSO) Identity Store service provides an interface to retrieve all of your users and groups. It enables entitlement management per user or group for AWS SSO and other IDPs.
+* `Aws\SecurityHub` - New details for DynamoDB tables, Elastic IP addresses, IAM policies and users, RDS DB clusters and snapshots, and Secrets Manager secrets. Added details for AWS KMS keys and RDS DB instances.
+* `Aws\SesV2` - This release includes new APIs to allow customers to add or remove email addresses from their account-level suppression list in bulk.
+
+## 3.149.2 - 2020-08-17
+
+* `Aws\ACM` - ACM provides support for the new Private CA feature Cross-account CA sharing. ACM users can issue certificates signed by a private CA belonging to another account where the CA was shared with them.
+* `Aws\ACMPCA` - ACM Private CA is launching cross-account support. This allows customers to share their private CAs with other accounts, AWS Organizations, and organizational units to issue end-entity certificates.
+* `Aws\ECR` - This feature adds support for pushing and pulling Open Container Initiative (OCI) artifacts.
+* `Aws\ElasticLoadBalancing` - Adds support for HTTP Desync Mitigation in Classic Load Balancers.
+* `Aws\ElasticLoadBalancingv2` - Adds support for HTTP Desync Mitigation in Application Load Balancers.
+* `Aws\Kinesis` - Introducing ShardFilter for ListShards API to filter the shards using a position in the stream, and ChildShards support for GetRecords and SubscribeToShard API to discover children shards on shard end
+* `Aws\QuickSight` - Amazon QuickSight now supports programmatic creation and management of analyses with new APIs.
+* `Aws\RoboMaker` - This release introduces RoboMaker Simulation WorldForge, a capability that automatically generates one or more simulation worlds.
+
 ## 3.149.1 - 2020-08-14
 
 * `Aws\AppStream` - Adds support for the Desktop View feature
