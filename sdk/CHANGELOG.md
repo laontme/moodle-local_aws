@@ -1,5 +1,68 @@
 # CHANGELOG
 
+## 3.152.0 - 2020-09-04
+
+* `Aws\Credentials` - This change adds support for the credential_source option in the credential file.
+* `Aws\SSM` - Documentation-only updates for AWS Systems Manager
+* `Aws\WorkSpaces` - Adding support for Microsoft Office 2016 and Microsoft Office 2019 in BYOL Images
+* `Aws\XRay` - Enhancing CreateGroup, UpdateGroup, GetGroup and GetGroups APIs to support configuring X-Ray Insights
+
+## 3.151.6 - 2020-09-03
+
+* `Aws\GuardDuty` - GuardDuty findings triggered by failed events now include the error code name within the AwsApiCallAction section.
+* `Aws\MediaPackage` - Enables inserting a UTCTiming XML tag in the output manifest of a DASH endpoint which a media player will use to help with time synchronization.
+* `Aws\SFN` - This release of the AWS Step Functions SDK introduces support for payloads up to 256KB for Standard and Express workflows
+* `Aws\kendra` - Amazon Kendra now returns confidence scores for both 'answer' and 'question and answer' query responses.
+
+## 3.151.5 - 2020-09-02
+
+* `Aws\Credentials` - Web identity credential provider now clears cached path for web identity token if token file fails to load.
+* `Aws\EC2` - This release adds a new transit gateway attachment state and resource type.
+* `Aws\Macie2` - This release of the Amazon Macie API introduces additional statistics for the size and count of Amazon S3 objects that Macie can analyze as part of a classification job.
+
+## 3.151.4 - 2020-09-01
+
+* `Aws\CodeGuruReviewer` - Add support for repository analysis based code reviews
+* `Aws\S3` - Fixes an issue where a stream would be created that uploaded a file name instead of the file for a multipart upload
+* `Aws\SecurityHub` - Added a PatchSummary object for security findings. The PatchSummary object provides details about the patch compliance status of an instance.
+
+## 3.151.3 - 2020-08-31
+
+* `Aws\Backup` - Documentation updates for Cryo
+* `Aws\CloudFront` - CloudFront now supports real-time logging for CloudFront distributions. CloudFront real-time logs are more detailed, configurable, and are available in real time.
+* `Aws\EC2` - Amazon EC2 and Spot Fleet now support modification of launch template configs for a running fleet enabling instance type, instance weight, AZ, and AMI updates without losing the current fleet ID.
+* `Aws\SQS` - Documentation updates for SQS.
+
+## 3.151.2 - 2020-08-28
+
+* `Aws\CloudFront` - You can now manage CloudFront's additional, real-time metrics with the CloudFront API.
+* `Aws\CostandUsageReportService` - This release add MONTHLY as the new supported TimeUnit for ReportDefinition.
+* `Aws\EMR` - Amazon EMR adds support for ICMP, port -1, in Block Public Access Exceptions and API access for EMR Notebooks execution. You can now non-interactively execute EMR Notebooks and pass input parameters.
+* `Aws\Route53` - Documentation updates for Route 53
+
+## 3.151.1 - 2020-08-27
+
+* `Aws\EC2` - Introduces support to initiate Internet Key Exchange (IKE) negotiations for VPN connections from AWS. A user can now send the initial IKE message to their Customer Gateway (CGW) from VPN endpoints.
+* `Aws\GameLift` - GameLift FleetIQ as a standalone feature is now generally available. FleetIQ makes low-cost Spot instances viable for game hosting. Use GameLift FleetIQ with your EC2 Auto Scaling groups.
+* `Aws\MediaConvert` - AWS Elemental MediaConvert SDK has added support for WebM DASH outputs as well as H.264 4:2:2 10-bit output in MOV and MP4.
+* `Aws\Redshift` - Documentation updates for Amazon Redshift.
+
+## 3.151.0 - 2020-08-26
+
+* `Aws\Appflow` - Amazon AppFlow is a fully managed integration service that securely transfers data between AWS services and SaaS applications. This update releases the first version of Amazon AppFlow APIs and SDK.
+* `Aws\Route53Resolver` - Route 53 Resolver adds support for resolver query logs
+* `Aws\S3` - Documentation updates for S3 methods with ambiguous success
+
+## 3.150.3 - 2020-08-24
+
+* `Aws\CloudWatchLogs` - Documentation updates for CloudWatch Logs
+* `Aws\DatabaseMigrationService` - Added new endpoint settings to include columns with Null and Empty value when using Kinesis and Kafka as target. Added a new endpoint setting to set maximum message size when using Kafka as target.
+* `Aws\EC2` - This release enables customers to use VPC prefix lists in their transit gateway route tables, and it adds support for Provisioned IOPS SSD (io2) EBS volumes.
+* `Aws\IoTSiteWise` - Add traversalDirection to ListAssociatedAssetsRequest and add portal status to ListPortalsResponse
+* `Aws\Kafka` - Add UpdateConfiguration and DeleteConfiguration operations.
+* `Aws\SSM` - Add string length constraints to OpsDataAttributeName and OpsFilterValue.
+* `Aws\XRay` - AWS X-Ray now supports tagging on sampling rules and groups.
+
 ## 3.150.2 - 2020-08-20
 
 * `Aws\ApiGatewayV2` - Customers can now create Amazon API Gateway HTTP APIs that route requests to AWS AppConfig, Amazon EventBridge, Amazon Kinesis Data Streams, Amazon SQS, and AWS Step Functions.

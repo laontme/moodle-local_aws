@@ -26,6 +26,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionAppMesh(array $args = [])
  * @method \Aws\AppSync\AppSyncClient createAppSync(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionAppSync(array $args = [])
+ * @method \Aws\Appflow\AppflowClient createAppflow(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionAppflow(array $args = [])
  * @method \Aws\ApplicationAutoScaling\ApplicationAutoScalingClient createApplicationAutoScaling(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionApplicationAutoScaling(array $args = [])
  * @method \Aws\ApplicationDiscoveryService\ApplicationDiscoveryServiceClient createApplicationDiscoveryService(array $args = [])
@@ -459,7 +461,7 @@ namespace Aws;
  */
 class Sdk
 {
-    const VERSION = '3.150.2';
+    const VERSION = '3.152.0';
 
     /** @var array Arguments for creating clients */
     private $args;
