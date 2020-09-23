@@ -31,6 +31,7 @@ jobs:
       env: DB=mysqli MOODLE_BRANCH=MOODLE_37_STABLE
     - env: DB=mysqli MOODLE_BRANCH=MOODLE_38_STABLE
     - env: DB=mysqli MOODLE_BRANCH=MOODLE_39_STABLE
+    - env: DB=mysqli MOODLE_BRANCH=MOODLE_310_STABLE
     - php: 7.4
       env: DB=mysqli MOODLE_BRANCH=master
 
@@ -42,6 +43,7 @@ before_install:
 
 install:
   - moodle-plugin-ci install
+  - cd moodle
 
 script:
   - moodle-plugin-ci phplint
@@ -54,6 +56,7 @@ script:
   - moodle-plugin-ci mustache 
   - moodle-plugin-ci grunt
   - moodle-plugin-ci phpunit --coverage-text --coverage-clover
+  - vendor/bin/phpunit --testsuite core_privacy_testsuite,tool_dataprivacy_testsuite
 
 after_success:
   - moodle-plugin-ci coveralls-upload

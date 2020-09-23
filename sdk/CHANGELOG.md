@@ -1,5 +1,93 @@
 # CHANGELOG
 
+## 3.155.0 - 2020-09-22
+
+* `Aws\Comprehend` - Amazon Comprehend integrates with Amazon SageMaker GroundTruth to allow its customers to annotate their datasets using GroundTruth and train their models using Comprehend Custom APIs.
+* `Aws\Credentials` - Added credential provider which retrieves cached SSO credentials from the CLI
+* `Aws\Credentials` - Fixes a crash in PHP 8.0 by calling array_values on the default chain array passed into self::chain
+* `Aws\DynamoDBStreams` - Documentation updates for streams.dynamodb
+* `Aws\LexModelBuildingService` - Lex now supports es-US locales
+* `Aws\WorkMail` - Adding support for Mailbox Export APIs
+
+## 3.154.7 - 2020-09-21
+
+* `Aws\CloudWatchEvents` - Add support for Redshift Data API Targets
+* `Aws\EventBridge` - Add support for Redshift Data API Targets
+* `Aws\Glue` - Adding support to update multiple partitions of a table in a single request
+* `Aws\IoTSiteWise` - This release supports IAM mode for SiteWise Monitor portals
+* `Aws\RDS` - Documentation updates for the RDS DescribeExportTasks API
+* `Aws\ResourceGroups` - Documentation updates and corrections for Resource Groups API Reference and SDKs.
+* `Aws\ResourceGroupsTaggingAPI` - Documentation updates for the Resource Groups Tagging API.
+
+## 3.154.6 - 2020-09-18
+
+* `Aws\CodeStarconnections` - New integration with the GitHub provider type.
+* `Aws\MediaLive` - AWS Elemental MediaLive now supports batch operations, which allow users to start, stop, and delete multiple MediaLive resources with a single request.
+* `Aws\SSOAdmin` - Documentation updates for AWS SSO APIs.
+
+## 3.154.5 - 2020-09-17
+
+* `Aws\APIGateway` - Adds support for mutual TLS authentication for public regional REST Apis
+* `Aws\ApiGatewayV2` - Adds support for mutual TLS authentication and disableAPIExecuteEndpoint for public regional HTTP Apis
+* `Aws\CloudFront` - Documentation updates for CloudFront
+* `Aws\Comprehend` - Amazon Comprehend now supports detecting Personally Identifiable Information (PII) entities in a document.
+* `Aws\ElasticsearchService` - Adds support for data plane audit logging in Amazon Elasticsearch Service.
+* `Aws\TranscribeStreamingService` - Amazon Transcribe now supports channel identification in real-time streaming, which enables you to transcribe multi-channel streaming audio.
+* `Aws\kendra` - Amazon Kendra now supports additional file formats and metadata for FAQs.
+
+## 3.154.4 - 2020-09-16
+
+* `Aws\Connect` - This release adds support for contact flows and routing profiles. For details, see the Release Notes in the Amazon Connect Administrator Guide.
+* `Aws\DLM` - Customers can now provide multiple schedules within a single Data Lifecycle Manager (DLM) policy. Each schedule supports tagging, Fast Snapshot Restore (FSR) and cross region copy individually.
+* `Aws\Greengrass` - This release includes the ability to set run-time configuration for a Greengrass core. The Telemetry feature, also included in this release, can be configured via run-time configuration per core.
+* `Aws\SSM` - The ComplianceItemEntry Status description was updated to address Windows patches that aren't applicable.
+* `Aws\ServiceCatalog` - Enhance DescribeProvisionedProduct API to allow useProvisionedProduct Name as Input, so customer can provide ProvisionedProduct Name instead of ProvisionedProduct Id to describe a ProvisionedProduct.
+
+## 3.154.3 - 2020-09-15
+
+* `Aws\Budgets` - Documentation updates for Daily Cost and Usage budgets
+* `Aws\EC2` - T4g instances are powered by AWS Graviton2 processors
+* `Aws\Kafka` - Added new API's to support SASL SCRAM Authentication with MSK Clusters.
+* `Aws\MediaLive` - AWS Elemental MediaLive now supports CDI (Cloud Digital Interface) inputs which enable uncompressed video from applications on Elastic Cloud Compute (EC2), AWS Media Services, and from AWS partners
+* `Aws\Organizations` - AWS Organizations now enables you to add tags to the AWS accounts, organizational units, organization root, and policies in your organization.
+* `Aws\SageMaker` - Sagemaker Ground Truth: Added support for a new Streaming feature which helps to continuously feed data and receive labels in real time. This release adds a new input and output SNS data channel.
+* `Aws\TranscribeService` - Amazon Transcribe now supports automatic language identification, which enables you to transcribe audio files without needing to know the language in advance.
+* `Aws\kendra` - Amazon Kendra now returns confidence scores for 'document' query responses.
+
+## 3.154.2 - 2020-09-14
+
+* `Aws\DocDB` - Updated API documentation and added paginators for DescribeCertificates, DescribeDBClusterParameterGroups, DescribeDBClusterParameters, DescribeDBClusterSnapshots and DescribePendingMaintenanceActions
+* `Aws\EC2` - This release adds support for the T4G instance family to the EC2 ModifyDefaultCreditSpecification and GetDefaultCreditSpecification APIs.
+* `Aws\ManagedBlockchain` - Introducing support for Hyperledger Fabric 1.4. When using framework version 1.4, the state database may optionally be specified when creating peer nodes (defaults to CouchDB).
+* `Aws\SFN` - This release of the AWS Step Functions SDK introduces support for AWS X-Ray.
+* `Aws\Test` - Tweaks test for PartitionEndpointProvider to accomodate changed S3 endpoint.
+
+## 3.154.1 - 2020-09-11
+
+* `Aws\WorkSpaces` - Adds API support for WorkSpaces Cross-Region Redirection feature.
+
+## 3.154.0 - 2020-09-10
+
+* `Aws\CloudFront` - Cloudfront adds support for Brotli. You can enable brotli caching and compression support by enabling it in your Cache Policy.
+* `Aws\EBS` - Documentation updates for Amazon EBS direct APIs.
+* `Aws\Pinpoint` - Update SMS message model description to clearly indicate that the MediaUrl field is reserved for future use and is not supported by Pinpoint as of today.
+* `Aws\S3` - Bucket owner verification feature added. This feature introduces the x-amz-expected-bucket-owner and x-amz-source-expected-bucket-owner headers.
+* `Aws\SSOAdmin` - This is an initial release of AWS Single Sign-On (SSO) Access Management APIs. This release adds support for SSO operations which could be used for managing access to AWS accounts.
+
+## 3.153.0 - 2020-09-09
+
+* `Aws\Glue` - Adding support for partitionIndexes to improve GetPartitions performance.
+* `Aws\KinesisAnalyticsV2` - Kinesis Data Analytics is adding new AUTOSCALING application status for applications during auto scaling and also adding FlinkRunConfigurationDescription in the ApplicationDetails.
+* `Aws\RedshiftDataAPIService` - The Amazon Redshift Data API is generally available. This release enables querying Amazon Redshift data and listing various database objects.
+
+## 3.152.1 - 2020-09-08
+
+* `Aws\ApiGatewayV2` - You can now secure HTTP APIs using Lambda authorizers and IAM authorizers. These options enable you to make flexible auth decisions using a Lambda function, or using IAM policies, respectively.
+* `Aws\CodeBuild` - AWS CodeBuild - Support keyword search for test cases in DecribeTestCases API . Allow deletion of reports in the report group, before deletion of report group using the deleteReports flag.
+* `Aws\ElasticLoadBalancingv2` - Adds support for Application Load Balancers on Outposts.
+* `Aws\LexModelBuildingService` - Amazon Lex supports en-AU locale
+* `Aws\QuickSight` - Adds tagging support for QuickSight customization resources. A user can now specify a list of tags when creating a customization resource and use a customization ARN in QuickSight's tagging APIs.
+
 ## 3.152.0 - 2020-09-04
 
 * `Aws\Credentials` - This change adds support for the credential_source option in the credential file.
