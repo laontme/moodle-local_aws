@@ -1,5 +1,71 @@
 # CHANGELOG
 
+## 3.158.0 - 2020-10-01
+
+* `Aws\AppSync` - Exposes the wafWebAclArn field on GraphQL api records. The wafWebAclArn field contains the amazon resource name of a WAF Web ACL if the AWS AppSync API is associated with one.
+* `Aws\EMR` - Documentation updates for elasticmapreduce
+* `Aws\Glue` - Adding additional optional map parameter to get-plan api
+* `Aws\Kafka` - Added support for Enabling Zookeeper Encryption in Transit for AWS MSK.
+* `Aws\QuickSight` - QuickSight now supports connecting to AWS Timestream data source
+* `Aws\S3` - Adds support to S3 and S3 Control clients for managing resources stored on S3 Outposts via Outposts-specific ARNs and endpoints.
+* `Aws\WAFV2` - AWS WAF is now available for AWS AppSync GraphQL APIs. AWS WAF protects against malicious attacks with AWS Managed Rules or your own custom rules. For more information see the AWS WAF Developer Guide.
+
+## 3.157.0 - 2020-09-30
+
+* `Aws\ApplicationAutoScaling` - This release extends Auto Scaling support for cluster storage of Managed Streaming for Kafka. Auto Scaling monitors and automatically expands storage capacity when a critical usage threshold is met.
+* `Aws\Credentials` - Fix credentialprovider error with undefined index source_profile when using credential_source
+* `Aws\DataSync` - This release enables customers to create s3 location for S3 bucket's located on an AWS Outpost.
+* `Aws\DirectConnect` - Documentation updates for AWS Direct Connect.
+* `Aws\EMR` - Amazon EMR customers can now use EC2 placement group to influence the placement of master nodes in a high-availability (HA) cluster across distinct underlying hardware to improve cluster availability.
+* `Aws\IoT` - AWS IoT Rules Engine adds Timestream action. The Timestream rule action lets you stream time-series data from IoT sensors and applications to Amazon Timestream databases for time series analysis.
+* `Aws\MediaConnect` - MediaConnect now supports reservations to provide a discounted rate for a specific outbound bandwidth over a period of time.
+* `Aws\Pinpoint` - Amazon Pinpoint - Features - Customers can start a journey based on an event being triggered by an endpoint or user.
+* `Aws\S3` - Amazon S3 on Outposts expands object storage to on-premises AWS Outposts environments, enabling you to store and retrieve objects using S3 APIs and features.
+* `Aws\S3Control` - Amazon S3 on Outposts expands object storage to on-premises AWS Outposts environments, enabling you to store and retrieve objects using S3 APIs and features.
+* `Aws\S3Outposts` - Amazon S3 on Outposts expands object storage to on-premises AWS Outposts environments, enabling you to store and retrieve objects using S3 APIs and features.
+* `Aws\SecurityHub` - Added several new resource details objects. Added additional details for CloudFront distributions, IAM roles, and IAM access keys. Added a new ResourceRole attribute for resources.
+* `Aws\imagebuilder` - EC2 Image Builder adds support for copying AMIs created by Image Builder to accounts specific to each Region.
+
+## 3.156.0 - 2020-09-29
+
+* `Aws\Connect` - Update TagResource API documentation to include Contact Flows and Routing Profiles as supported resources.
+* `Aws\EC2` - This release adds support for Client to Client routing for AWS Client VPN.
+* `Aws\SSM` - Simple update to description of ComplianceItemStatus.
+* `Aws\Schemas` - Added support for schemas of type JSONSchemaDraft4. Added ExportSchema API that converts schemas in AWS Events registry and Discovered schemas from OpenApi3 to JSONSchemaDraft4.
+* `Aws\TimestreamQuery` - (New Service) Amazon Timestream is a fast, scalable, fully managed, purpose-built time series database that makes it easy to store and analyze trillions of time series data points per day.
+* `Aws\TimestreamWrite` - (New Service) Amazon Timestream is a fast, scalable, fully managed, purpose-built time series database that makes it easy to store and analyze trillions of time series data points per day.
+
+## 3.155.4 - 2020-09-28
+
+* `Aws\ApplicationAutoScaling` - This release extends Application Auto Scaling support to AWS Comprehend Entity Recognizer endpoint, allowing automatic updates to provisioned Inference Units to maintain targeted utilization level.
+* `Aws\RDS` - This release adds the InsufficientAvailableIPsInSubnetFault error for RDS Proxy.
+* `Aws\S3` - Corrected urlencoding of CopySource key for MultipartCopy
+
+## 3.155.3 - 2020-09-25
+
+* `Aws\Batch` - Support custom logging, executionRole, secrets, and linuxParameters (initProcessEnabled, maxSwap, swappiness, sharedMemorySize, and tmpfs). Also, add new context keys for awslogs.
+* `Aws\ConfigService` - Make the delivery-s3-bucket as an optional parameter for conformance packs and organizational conformance packs
+* `Aws\DocDB` - Documentation updates for docdb
+* `Aws\EC2` - This release supports returning additional information about local gateway resources, such as the local gateway route table.
+* `Aws\FraudDetector` - Increased maximum length of eventVariables values for GetEventPrediction from 256 to 1024.
+* `Aws\STS` - Documentation update for AssumeRole error
+
+## 3.155.2 - 2020-09-24
+
+* `Aws\Amplify` - Allow Oauth Token in CreateApp call to be a maximum of 1000 characters instead of 100
+* `Aws\EKS` - Amazon EKS now supports configuring your cluster's service CIDR during cluster creation.
+* `Aws\SavingsPlans` - Introducing Queued SavingsPlans that will enable customers to queue their purchase request of Savings Plans for future dates.
+* `Aws\Synthetics` - AWS Synthetics now supports AWS X-Ray Active Tracing feature. RunConfig is now an optional parameter with timeout updated from (60 - 900 seconds) to (3 - 840 seconds).
+* `Aws\Textract` - AWS Textract now supports output results for asynchronous jobs to customer specified s3 bucket.
+* `Aws\TranscribeService` - Amazon Transcribe now supports WebM, OGG, AMR and AMR-WB as input formats. You can also specify an output key as a location within your S3 buckets to store the output of your transcription jobs.
+
+## 3.155.1 - 2020-09-23
+
+* `Aws\Backup` - This release allows customers to enable or disable advanced backup settings in backup plan. As part of this feature AWS Backup added support for Windows VSS backup option for EC2 resources.
+* `Aws\CostExplorer` - This release provides access to Cost Anomaly Detection Public Preview APIs. Cost Anomaly Detection finds cost anomalies based on your historical cost and usage using Machine Learning models.
+* `Aws\QuickSight` - Added Sheet information to DescribeDashboard, DescribeTemplate and DescribeAnalysis API response.
+* `Aws\Translate` - Improvements to DeleteTerminology API.
+
 ## 3.155.0 - 2020-09-22
 
 * `Aws\Comprehend` - Amazon Comprehend integrates with Amazon SageMaker GroundTruth to allow its customers to annotate their datasets using GroundTruth and train their models using Comprehend Custom APIs.
