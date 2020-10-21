@@ -20,18 +20,18 @@ $mapping = array(
     'Psr\Http\Message\StreamInterface' => __DIR__ . '/Psr/Http/Message/StreamInterface.php',
     'Psr\Http\Message\UploadedFileInterface' => __DIR__ . '/Psr/Http/Message/UploadedFileInterface.php',
     'Psr\Http\Message\MessageInterface' => __DIR__ . '/Psr/Http/Message/MessageInterface.php',
-    'Symfony\Polyfill\IntlIdn\bootstrap' => __DIR__ . '/Symfony/Polyfill/IntlIdn/bootstrap.php',
-    'Symfony\Polyfill\IntlIdn\Resources\unidata\disallowed_STD3_valid' => __DIR__ . '/Symfony/Polyfill/IntlIdn/Resources/unidata/disallowed_STD3_valid.php',
-    'Symfony\Polyfill\IntlIdn\Resources\unidata\Regex' => __DIR__ . '/Symfony/Polyfill/IntlIdn/Resources/unidata/Regex.php',
-    'Symfony\Polyfill\IntlIdn\Resources\unidata\DisallowedRanges' => __DIR__ . '/Symfony/Polyfill/IntlIdn/Resources/unidata/DisallowedRanges.php',
-    'Symfony\Polyfill\IntlIdn\Resources\unidata\ignored' => __DIR__ . '/Symfony/Polyfill/IntlIdn/Resources/unidata/ignored.php',
-    'Symfony\Polyfill\IntlIdn\Resources\unidata\disallowed' => __DIR__ . '/Symfony/Polyfill/IntlIdn/Resources/unidata/disallowed.php',
-    'Symfony\Polyfill\IntlIdn\Resources\unidata\disallowed_STD3_mapped' => __DIR__ . '/Symfony/Polyfill/IntlIdn/Resources/unidata/disallowed_STD3_mapped.php',
-    'Symfony\Polyfill\IntlIdn\Resources\unidata\deviation' => __DIR__ . '/Symfony/Polyfill/IntlIdn/Resources/unidata/deviation.php',
-    'Symfony\Polyfill\IntlIdn\Resources\unidata\mapped' => __DIR__ . '/Symfony/Polyfill/IntlIdn/Resources/unidata/mapped.php',
-    'Symfony\Polyfill\IntlIdn\Resources\unidata\virama' => __DIR__ . '/Symfony/Polyfill/IntlIdn/Resources/unidata/virama.php',
-    'Symfony\Polyfill\IntlIdn\Idn' => __DIR__ . '/Symfony/Polyfill/IntlIdn/Idn.php',
-    'Symfony\Polyfill\IntlIdn\Info' => __DIR__ . '/Symfony/Polyfill/IntlIdn/Info.php',
+    'Symfony\Polyfill\Intl\Idn\bootstrap' => __DIR__ . '/Symfony/Polyfill/Intl/Idn/bootstrap.php',
+    'Symfony\Polyfill\Intl\Idn\Resources\unidata\disallowed_STD3_valid' => __DIR__ . '/Symfony/Polyfill/Intl/Idn/Resources/unidata/disallowed_STD3_valid.php',
+    'Symfony\Polyfill\Intl\Idn\Resources\unidata\Regex' => __DIR__ . '/Symfony/Polyfill/Intl/Idn/Resources/unidata/Regex.php',
+    'Symfony\Polyfill\Intl\Idn\Resources\unidata\DisallowedRanges' => __DIR__ . '/Symfony/Polyfill/Intl/Idn/Resources/unidata/DisallowedRanges.php',
+    'Symfony\Polyfill\Intl\Idn\Resources\unidata\ignored' => __DIR__ . '/Symfony/Polyfill/Intl/Idn/Resources/unidata/ignored.php',
+    'Symfony\Polyfill\Intl\Idn\Resources\unidata\disallowed' => __DIR__ . '/Symfony/Polyfill/Intl/Idn/Resources/unidata/disallowed.php',
+    'Symfony\Polyfill\Intl\Idn\Resources\unidata\disallowed_STD3_mapped' => __DIR__ . '/Symfony/Polyfill/Intl/Idn/Resources/unidata/disallowed_STD3_mapped.php',
+    'Symfony\Polyfill\Intl\Idn\Resources\unidata\deviation' => __DIR__ . '/Symfony/Polyfill/Intl/Idn/Resources/unidata/deviation.php',
+    'Symfony\Polyfill\Intl\Idn\Resources\unidata\mapped' => __DIR__ . '/Symfony/Polyfill/Intl/Idn/Resources/unidata/mapped.php',
+    'Symfony\Polyfill\Intl\Idn\Resources\unidata\virama' => __DIR__ . '/Symfony/Polyfill/Intl/Idn/Resources/unidata/virama.php',
+    'Symfony\Polyfill\Intl\Idn\Idn' => __DIR__ . '/Symfony/Polyfill/Intl/Idn/Idn.php',
+    'Symfony\Polyfill\Intl\Idn\Info' => __DIR__ . '/Symfony/Polyfill/Intl/Idn/Info.php',
     'GuzzleHttp\UriTemplate' => __DIR__ . '/GuzzleHttp/UriTemplate.php',
     'GuzzleHttp\Promise\functions' => __DIR__ . '/GuzzleHttp/Promise/functions_include.php',
     'GuzzleHttp\Promise\Promise' => __DIR__ . '/GuzzleHttp/Promise/Promise.php',
@@ -1517,4 +1517,4 @@ require_once __DIR__ . '/GuzzleHttp/functions_include.php';
 require_once __DIR__ . '/GuzzleHttp/Psr7/functions_include.php';
 require_once __DIR__ . '/GuzzleHttp/Promise/functions_include.php';
 require_once __DIR__ . '/JmesPath/JmesPath.php';
-require_once __DIR__ . '/Symfony/Polyfill/IntlIdn/bootstrap.php';
+require_once __DIR__ . '/Symfony/Polyfill/Intl/Idn/bootstrap.php';
