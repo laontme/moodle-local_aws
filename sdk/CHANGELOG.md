@@ -1,5 +1,64 @@
 # CHANGELOG
 
+## 3.158.18 - 2020-10-30
+
+* `Aws\Braket` - This release supports tagging for Amazon Braket quantum-task resources. It also supports tag-based access control for quantum-task APIs.
+* `Aws\DatabaseMigrationService` - Adding DocDbSettings to support DocumentDB as a source.
+* `Aws\ElastiCache` - Documentation updates for AWS ElastiCache
+* `Aws\Macie2` - This release of the Amazon Macie API adds an eqExactMatch operator for filtering findings. With this operator you can increase the precision of your finding filters and suppression rules.
+* `Aws\MediaLive` - Support for HLS discontinuity tags in the child manifests. Support for incomplete segment behavior in the media output. Support for automatic input failover condition settings.
+* `Aws\SNS` - Documentation updates for Amazon SNS
+* `Aws\imagebuilder` - This feature increases the number of accounts that can be added to the Launch permissions within an Image Builder Distribution configuration.
+
+## 3.158.17 - 2020-10-29
+
+* `Aws\APIGateway` - Support disabling the default execute-api endpoint for REST APIs.
+* `Aws\CodeArtifact` - Add support for tagging of CodeArtifact domain and repository resources.
+* `Aws\EC2` - Support for Appliance mode on Transit Gateway that simplifies deployment of stateful network appliances. Added support for AWS Client VPN Self-Service Portal.
+* `Aws\ElasticLoadBalancingv2` - Application Load Balancer (ALB) now supports the gRPC protocol-version. With this release, customers can use ALB to route and load balance gRPC traffic between gRPC enabled clients and microservices.
+* `Aws\MarketplaceCommerceAnalytics` - Documentation updates for marketplacecommerceanalytics to specify four data sets which are deprecated.
+* `Aws\SesV2` - This release enables customers to manage their own contact lists and end-user subscription preferences.
+* `Aws\StorageGateway` - Adding support for access based enumeration on SMB file shares, file share visibility on SMB file shares, and file upload notifications for all file shares
+
+## 3.158.16 - 2020-10-28
+
+* `Aws\EC2` - AWS Nitro Enclaves general availability. Added support to RunInstances for creating enclave-enabled EC2 instances. New APIs to associate an ACM certificate with an IAM role, for enclave consumption.
+* `Aws\IoT` - This release adds support for GG-Managed Job Namespace
+* `Aws\WorkMail` - Documentation update for Amazon WorkMail
+
+## 3.158.15 - 2020-10-27
+
+* `Aws\Glue` - AWS Glue machine learning transforms now support encryption-at-rest for labels and trained models.
+* `Aws\S3` - Added validation that required S3 parameters are non empty
+
+## 3.158.14 - 2020-10-26
+
+* `Aws\Neptune` - This feature enables custom endpoints for Amazon Neptune clusters. Custom endpoints simplify connection management when clusters contain instances with different capacities and configuration settings.
+* `Aws\SageMaker` - This release enables customers to bring custom images for use with SageMaker Studio notebooks.
+* `Aws\kendra` - Amazon Kendra now supports indexing data from Confluence Server.
+
+## 3.158.13 - 2020-10-23
+
+* `Aws\Macie2` - This release of the Amazon Macie API includes miscellaneous updates and improvements to the documentation.
+* `Aws\MediaTailor` - MediaTailor now supports ad marker passthrough for HLS. Use AdMarkerPassthrough to pass EXT-X-CUE-IN, EXT-X-CUE-OUT, and EXT-X-SPLICEPOINT-SCTE35 from origin manifests into personalized manifests.
+* `Aws\QuickSight` - Support description on columns.
+
+## 3.158.12 - 2020-10-22
+
+* `Aws\AccessAnalyzer` - API Documentation updates for IAM Access Analyzer.
+* `Aws\Appflow` - Salesforce connector creation with customer provided client id and client secret, incremental pull configuration, salesforce upsert write operations and execution ID when on-demand flows are executed.
+* `Aws\SNS` - SNS now supports a new class of topics: FIFO (First-In-First-Out). FIFO topics provide strictly-ordered, deduplicated, filterable, encryptable, many-to-many messaging at scale.
+* `Aws\ServiceCatalog` - Documentation updates for servicecatalog
+
+## 3.158.11 - 2020-10-21
+
+* `Aws\CloudFront` - CloudFront adds support for managing the public keys for signed URLs and signed cookies directly in CloudFront (it no longer requires the AWS root account).
+* `Aws\EC2` - instance-storage-info nvmeSupport added to DescribeInstanceTypes API
+* `Aws\GlobalAccelerator` - This release adds support for specifying port overrides on AWS Global Accelerator endpoint groups.
+* `Aws\Glue` - AWS Glue crawlers now support incremental crawls for the Amazon Simple Storage Service (Amazon S3) data source.
+* `Aws\Organizations` - AWS Organizations renamed the 'master account' to 'management account'.
+* `Aws\kendra` - This release adds custom data sources: a new data source type that gives you full control of the documents added, modified or deleted during a data source sync while providing run history metrics.
+
 ## 3.158.10 - 2020-10-20
 
 * `Aws\AppSync` - Documentation updates to AppSync to correct several typos.

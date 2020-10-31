@@ -1261,6 +1261,7 @@ $mapping = array(
     'Aws\ImportExport\ImportExportClient' => __DIR__ . '/Aws/ImportExport/ImportExportClient.php',
     'Aws\ImportExport\Exception\ImportExportException' => __DIR__ . '/Aws/ImportExport/Exception/ImportExportException.php',
     'Aws\HasMonitoringEventsTrait' => __DIR__ . '/Aws/HasMonitoringEventsTrait.php',
+    'Aws\InputValidationMiddleware' => __DIR__ . '/Aws/InputValidationMiddleware.php',
     'Aws\AutoScaling\Exception\AutoScalingException' => __DIR__ . '/Aws/AutoScaling/Exception/AutoScalingException.php',
     'Aws\AutoScaling\AutoScalingClient' => __DIR__ . '/Aws/AutoScaling/AutoScalingClient.php',
     'Aws\AppMesh\AppMeshClient' => __DIR__ . '/Aws/AppMesh/AppMeshClient.php',
