@@ -1,5 +1,43 @@
 # CHANGELOG
 
+## 3.158.22 - 2020-11-06
+
+* `Aws\DLM` - Amazon Data Lifecycle Manager now supports the creation and retention of EBS-backed Amazon Machine Images
+* `Aws\EC2` - Network card support with four new attributes: NetworkCardIndex, NetworkPerformance, DefaultNetworkCardIndex, and MaximumNetworkInterfaces, added to the DescribeInstanceTypes API.
+* `Aws\IoTSiteWise` - Remove the CreatePresignedPortalUrl API
+* `Aws\MediaLive` - Support for SCTE35 ad markers in OnCuePoint style in RTMP outputs.
+* `Aws\SSM` - Documentation updates for Systems Manager
+
+## 3.158.21 - 2020-11-05
+
+* `Aws\AppMesh` - This release adds circuit breaking capabilities to your mesh with connection pooling and outlier detection support.
+* `Aws\CloudWatchEvents` - With this release, customers can now reprocess past events by storing the events published on event bus in an encrypted archive.
+* `Aws\DynamoDB` - This release adds a new ReplicaStatus INACCESSIBLE_ENCRYPTION_CREDENTIALS for the Table description, indicating when a key used to encrypt a regional replica table is not accessible.
+* `Aws\EC2` - Documentation updates for EC2.
+* `Aws\ElasticsearchService` - Amazon Elasticsearch Service now provides the ability to define a custom endpoint for your domain and link an SSL certificate from ACM, making it easier to refer to Kibana and the domain endpoint.
+* `Aws\EventBridge` - With this release, customers can now reprocess past events by storing the events published on event bus in an encrypted archive.
+* `Aws\FraudDetector` - Added support for deleting resources like Variables, ExternalModels, Outcomes, Models, ModelVersions, Labels, EventTypes and EntityTypes. Updated DeleteEvent operation to catch missing exceptions.
+* `Aws\Lambda` - Support Amazon MQ as an Event Source.
+* `Aws\RDS` - Supports a new parameter to set the max allocated storage in gigabytes for the CreateDBInstanceReadReplica API.
+* `Aws\kendra` - Amazon Kendra now supports providing user context in your query requests, Tokens can be JSON or JWT format. This release also introduces support for Confluence cloud datasources.
+
+## 3.158.20 - 2020-11-04
+
+* `Aws\AutoScaling` - Capacity Rebalance helps you manage and maintain workload availability during Spot interruptions by proactively augmenting your Auto Scaling group with a new instance before interrupting an old one.
+* `Aws\CloudWatch` - Documentation updates for monitoring
+* `Aws\EC2` - Added support for Client Connect Handler for AWS Client VPN. Fleet supports launching replacement instances in response to Capacity Rebalance recommendation.
+* `Aws\ElasticsearchService` - Amazon Elasticsearch Service now supports native SAML authentication that seamlessly integrates with the customers' existing SAML 2.0 Identity Provider (IdP).
+* `Aws\IoT` - Updated API documentation and added paginator for AWS Iot Registry ListThingPrincipals API.
+* `Aws\MQ` - Amazon MQ introduces support for RabbitMQ, a popular message-broker with native support for AMQP 0.9.1. You can now create fully-managed RabbitMQ brokers in the cloud.
+* `Aws\MarketplaceMetering` - Adding Vendor Tagging Support in MeterUsage and BatchMeterUsage API.
+* `Aws\ServiceCatalog` - Service Catalog API ListPortfolioAccess can now support a maximum PageSize of 100.
+* `Aws\TranscribeStreamingService` - With this release, Amazon Transcribe now supports real-time transcription from audio sources in Italian (it-IT) and German(de-DE).
+* `Aws\XRay` - Releasing new APIs GetInsightSummaries, GetInsightEvents, GetInsight, GetInsightImpactGraph and updating GetTimeSeriesServiceStatistics API for AWS X-Ray Insights feature
+
+## 3.158.19 - 2020-11-02
+
+* `Aws\EC2` - This release adds support for the following features: 1. P4d instances based on NVIDIA A100 GPUs. 2. NetworkCardIndex attribute to support multiple network cards.
+
 ## 3.158.18 - 2020-10-30
 
 * `Aws\Braket` - This release supports tagging for Amazon Braket quantum-task resources. It also supports tag-based access control for quantum-task APIs.
