@@ -19,14 +19,15 @@
  *
  * @package   local_aws
  * @author    Kenneth Hendricks <kennethhendricks@catalyst-au.net>
+ * @author    Renaat Debleu <info@eWallah.net>
  * @copyright Catalyst IT
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2020062500;
-$plugin->release   = '3.143.1';
+$plugin->version   = 2020112001;
+$plugin->release   = '3.163.1';
 $plugin->requires  = 2013111811;
 $plugin->component = 'local_aws';
 $plugin->maturity  = MATURITY_STABLE;
