@@ -1,5 +1,66 @@
 # CHANGELOG
 
+## 3.170.0 - 2020-12-15
+
+* `Aws\GreengrassV2` - AWS IoT Greengrass V2 is a new major version of AWS IoT Greengrass. This release adds several updates such as modular components, continuous deployments, and improved ease of use.
+* `Aws\IoT` - AWS IoT Rules Engine adds Kafka Action that allows sending data to Apache Kafka clusters inside a VPC. AWS IoT Device Defender adds custom metrics and machine-learning based anomaly detection.
+* `Aws\IoTAnalytics` - FileFormatConfiguration enables data store to save data in JSON or Parquet format. S3Paths enables you to specify the S3 objects that save your channel messages when you reprocess the pipeline.
+* `Aws\IoTDeviceAdvisor` - AWS IoT Core Device Advisor is fully managed test capability for IoT devices. Device manufacturers can use Device Advisor to test their IoT devices for reliable and secure connectivity with AWS IoT.
+* `Aws\IoTFleetHub` - AWS IoT Fleet Hub, a new feature of AWS IoT Device Management that provides a web application for monitoring and managing device fleets connected to AWS IoT at scale.
+* `Aws\IoTWireless` - AWS IoT for LoRaWAN enables customers to setup a private LoRaWAN network by connecting their LoRaWAN devices and gateways to the AWS cloud without managing a LoRaWAN Network Server.
+* `Aws\Lambda` - Added support for Apache Kafka as a event source. Added support for TumblingWindowInSeconds for streams event source mappings. Added support for FunctionResponseTypes for streams event source mappings
+* `Aws\PrometheusService` - (New Service) Amazon Managed Service for Prometheus is a fully managed Prometheus-compatible monitoring service that makes it easy to monitor containerized applications securely and at scale.
+* `Aws\SSM` - Adding support for Change Manager API content
+
+## 3.169.0 - 2020-12-14
+
+* `Aws\` - Added support for github actions
+* `Aws\` - Fix using ecs credentials provider on multi-threaded servers
+* `Aws\DevOpsGuru` - Documentation updates for DevOps Guru.
+* `Aws\EC2` - Add c5n.metal to ec2 instance types list
+* `Aws\GlobalAccelerator` - This release adds support for custom routing accelerators
+
+## 3.168.3 - 2020-12-11
+
+* `Aws\AutoScaling` - Documentation updates and corrections for Amazon EC2 Auto Scaling API Reference and SDKs.
+* `Aws\CloudTrail` - CloudTrailInvalidClientTokenIdException is now thrown when a call results in the InvalidClientTokenId error code. The Name parameter of the AdvancedEventSelector data type is now optional.
+* `Aws\CloudWatch` - Documentation updates for monitoring
+* `Aws\GuardDuty` - Documentation updates for GuardDuty
+* `Aws\IoTSiteWise` - Added the ListAssetRelationships operation and support for composite asset models, which represent structured sets of properties within asset models.
+* `Aws\PI` - You can group DB load according to the dimension groups for database, application, and session type. Amazon RDS also supports the dimensions db.name, db.application.name, and db.session_type.name.
+
+## 3.168.2 - 2020-12-10
+
+* `Aws\EC2` - TGW connect simplifies connectivity of SD-WAN appliances; IGMP support for TGW multicast; VPC Reachability Analyzer for VPC resources connectivity analysis.
+* `Aws\NetworkManager` - This release adds API support for Transit Gateway Connect integration into AWS Network Manager.
+* `Aws\kendra` - Amazon Kendra now supports adding synonyms to an index through the new Thesaurus resource.
+
+## 3.168.1 - 2020-12-09
+
+* `Aws\EC2` - This release adds support for G4ad instances powered by AMD Radeon Pro V520 GPUs and AMD 2nd Generation EPYC processors
+* `Aws\GlobalAccelerator` - This release adds support for custom routing accelerators
+* `Aws\Redshift` - Add support for availability zone relocation feature.
+
+## 3.168.0 - 2020-12-08
+
+* `Aws\AuditManager` - AWS Audit Manager helps you continuously audit your AWS usage to simplify how you manage risk and compliance. This update releases the first version of the AWS Audit Manager APIs and SDK.
+* `Aws\ECR` - This release adds support for configuring cross-region and cross-account replication of your Amazon ECR images.
+* `Aws\EMRContainers` - This release adds support for Amazon EMR on EKS, a simple way to run Spark on Kubernetes.
+* `Aws\ForecastService` - This release adds support for the Amazon Forecast Weather Index which can increase forecasting accuracy by automatically including weather forecasts in demand forecasts.
+* `Aws\HealthLake` - This release introduces Amazon HealthLake (preview), a HIPAA-eligible service that enables healthcare and life sciences customers to store, transform, query, and analyze health data in the AWS Cloud.
+* `Aws\QuickSight` - Added new parameters for join optimization.
+* `Aws\Rds` - Added optional configurable lifetime value to Rds AuthTokenGenerator
+* `Aws\SageMaker` - This feature helps you monitor model performance characteristics such as accuracy, identify undesired bias in your ML models, and explain model decisions better with explainability drift detection.
+* `Aws\SageMakerRuntime` - This feature allows customers to invoke their endpoint with an inference ID. If used and data capture for the endpoint is enabled, this ID will be captured along with request data.
+* `Aws\SagemakerEdgeManager` - Amazon SageMaker Edge Manager makes it easy to optimize, secure, monitor, and maintain machine learning (ML) models across fleets of edge devices such as smart cameras, smart speakers, and robots.
+* `Aws\kendra` - 1. Amazon Kendra connector for Google Drive repositories 2. Amazon Kendra's relevance ranking models are regularly tuned for each customer by capturing end-user search patterns and feedback.
+
+## 3.167.0 - 2020-12-07
+
+* `Aws\` - Adds cross region pre-signing to various methods in DocDbClient, RdsClient, and NeptuneClient
+* `Aws\AppRegistry` - AWS Service Catalog AppRegistry now supports adding, removing, and listing tags on resources after they are created.
+* `Aws\DatabaseMigrationService` - Added PreserveTransaction setting to preserve order of CDC for S3 as target. Added CsvNoSupValue setting to replace empty value for columns not included in the supplemental log for S3 as target.
+
 ## 3.166.2 - 2020-12-04
 
 * `Aws\DirectoryService` - Documentation updates for ds - updated descriptions
