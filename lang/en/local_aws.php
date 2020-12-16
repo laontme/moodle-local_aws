@@ -13,16 +13,15 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-//
 
-  /**
-   * Strings for component 'local_aws', language 'en'.
-   *
-   * @package   local_aws
-   * @author    Kenneth Hendricks <kennethhendricks@catalyst-au.net>
-   * @copyright Catalyst IT
-   * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
-   */
+/**
+ * Strings for component 'local_aws', language 'en'.
+ *
+ * @package   local_aws
+ * @author    Kenneth Hendricks <kennethhendricks@catalyst-au.net>
+ * @copyright Catalyst IT
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 
 $string['pluginname'] = "Amazon's SDK for PHP";
 $string['privacy:metadata'] = 'The local aws plugin does not store any personal data. However, it allows other plugins to pass data to AWS services.';
