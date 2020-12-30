@@ -13,6 +13,14 @@ jobs:
     runs-on: ubuntu-18.04
 
     services:
+      postgres:
+        image: postgres
+        env:
+          POSTGRES_USER: 'postgres'
+          POSTGRES_HOST_AUTH_METHOD: 'trust'
+        options: --health-cmd="pg_isready" --health-interval 10s --health-timeout 5s --health-retries 5
+        ports:
+          - 5432:5432
       mariadb:
         image: mariadb
         env:
@@ -21,14 +29,6 @@ jobs:
         options: --health-cmd="mysqladmin ping" --health-interval 10s --health-timeout 5s --health-retries 3
         ports:
           - 3306:3306
-      postgres:
-        image: postgres
-        env:
-          POSTGRES_USER: moodleuser
-          POSTGRES_PASSWORD: moodle
-        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
-        ports:
-          - 5432:5432
 
     strategy:
       fail-fast: false
@@ -37,7 +37,7 @@ jobs:
         php: ['7.3', '7.4']
         database: ['mariadb', 'pgsql']
 
-    name: ${{ matrix.moodle-branch }}  php ${{ matrix.php }}  ${{ matrix.operating-system }}
+    name: ${{ matrix.moodle-branch }}  php ${{ matrix.php }}  ${{ matrix.database }}
 
     steps:
       - name: checkout plugin
@@ -54,7 +54,8 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php }}
-          extensions: mbstring, mysqli, gd, zip
+          extensions: mbstring, pgsql, mysqli, gd, zip
+          tools: composer, behat, phpunit, phpmd, phpcbf, phpcpd, psalm, phpcs
 
       - name: checkout moodle-plugin-ci
         uses: actions/checkout@v2
