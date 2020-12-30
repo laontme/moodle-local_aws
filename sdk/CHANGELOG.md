@@ -1,5 +1,88 @@
 # CHANGELOG
 
+## 3.171.8 - 2020-12-29
+
+* `Aws\ACMPCA` - This release adds a new parameter "CsrExtensions" in the "CertificateAuthorityConfiguration" data structure, which allows customers to add the addition of KU and SIA into the CA CSR.
+* `Aws\ApiGatewayV2` - Amazon API Gateway now supports data mapping for HTTP APIs which allows customers to modify HTTP Request before sending it to their integration and HTTP Response before sending it to the invoker.
+
+## 3.171.7 - 2020-12-28
+
+* `Aws\CloudFront` - Amazon CloudFront has deprecated the CreateStreamingDistribution and CreateStreamingDistributionWithTags APIs as part of discontinuing support for Real-Time Messaging Protocol (RTMP) distributions.
+
+## 3.171.6 - 2020-12-23
+
+* `Aws\ComputeOptimizer` - This release enables AWS Compute Optimizer to analyze and generate optimization recommendations for lambda functions.
+* `Aws\DatabaseMigrationService` - AWS DMS launches support for AWS Secrets Manager to manage Oracle ASM Database credentials
+* `Aws\ResourceGroups` - Add operation `PutGroupConfiguration`. Support dedicated hosts and add `Pending` in operations `Un/GroupResources`. Add `Resources` in `ListGroupResources` and deprecate `ResourceIdentifiers`.
+
+## 3.171.5 - 2020-12-22
+
+* `Aws\Connect` - This release adds support for quick connects. For details, see the Release Notes in the Amazon Connect Administrator Guide.
+* `Aws\CostExplorer` - This release adds additional metadata that may be applicable to the Rightsizing Recommendations.
+* `Aws\ElastiCache` - Documentation updates for elasticache
+* `Aws\Glue` - AWS Glue Find Matches machine learning transforms now support column importance scores.
+* `Aws\IoTWireless` - Adding the ability to use Fingerprint in GetPartnerAccount and ListPartnerAccounts API responses to protect sensitive customer account information.
+* `Aws\RDS` - Adds customer-owned IP address (CoIP) support to Amazon RDS on AWS Outposts.
+* `Aws\SSM` - SSM Maintenance Window support for registering/updating maintenance window tasks without targets.
+
+## 3.171.4 - 2020-12-22
+
+* `Aws\Connect` - This release adds support for quick connects. For details, see the Release Notes in the Amazon Connect Administrator Guide.
+* `Aws\CostExplorer` - This release adds additional metadata that may be applicable to the Rightsizing Recommendations.
+* `Aws\ElastiCache` - Documentation updates for elasticache
+* `Aws\Glue` - AWS Glue Find Matches machine learning transforms now support column importance scores.
+* `Aws\IoTWireless` - Adding the ability to use Fingerprint in GetPartnerAccount and ListPartnerAccounts API responses to protect sensitive customer account information.
+* `Aws\RDS` - Adds customer-owned IP address (CoIP) support to Amazon RDS on AWS Outposts.
+* `Aws\SSM` - SSM Maintenance Window support for registering/updating maintenance window tasks without targets.
+
+## 3.171.3 - 2020-12-21
+
+* `Aws\APIGateway` - Documentation updates for Amazon API Gateway.
+* `Aws\AppRegistry` - New API `SyncResouce` to update AppRegistry system tags.
+* `Aws\Batch` - Documentation updates for batch
+* `Aws\ConfigService` - AWS Config adds support to save advanced queries. New API operations - GetStoredQuery, PutStoredQuery, ListStoredQueries, DeleteStoredQuery
+* `Aws\ConnectParticipant` - This release adds three new APIs: StartAttachmentUpload, CompleteAttachmentUpload, and GetAttachment. For Amazon Connect Chat, you can use these APIs to share files in chat conversations.
+* `Aws\Credentials` - Bugfix to throw an exception on empty token file.
+* `Aws\DatabaseMigrationService` - AWS DMS launches support for AWS Secrets Manager to manage source and target database credentials.
+* `Aws\EC2` - This release adds Tag On Create feature support for the AllocateAddress API.
+* `Aws\Glue` - Add 4 connection properties: SECRET_ID, CONNECTOR_URL, CONNECTOR_TYPE, CONNECTOR_CLASS_NAME. Add two connection types: MARKETPLACE, CUSTOM
+* `Aws\ManagedBlockchain` - Added support for provisioning and managing public Ethereum nodes on main and test networks supporting secure access using Sigv4 and standard open-source Ethereum APIs.
+* `Aws\Outposts` - In this release, AWS Outposts adds support for three new APIs: TagResource, UntagResource, and ListTagsForResource. Customers can now manage tags for their resources through the SDK.
+* `Aws\QLDBSession` - Adds "TimingInformation" to all SendCommand API results and "IOUsage" to ExecuteStatementResult, FetchPageResult and CommitTransactionResult.
+* `Aws\S3` - Format GetObject's Expires header to be an http-date instead of iso8601
+* `Aws\SecurityHub` - Finding providers can now use BatchImportFindings to update Confidence, Criticality, RelatedFindings, Severity, and Types.
+* `Aws\ServiceQuotas` - Added the ability to tag applied quotas.
+
+## 3.171.2 - 2020-12-18
+
+* `Aws\` - Removed dev guide from this repo and linked to the new repo where it is hosted
+* `Aws\EC2` - EBS io2 volumes now supports Multi-Attach
+* `Aws\PersonalizeRuntime` - Updated FilterValues regex pattern to align with Filter Expression.
+* `Aws\RDS` - Adds IAM DB authentication information to the PendingModifiedValues output of the DescribeDBInstances API. Adds ClusterPendingModifiedValues information to the output of the DescribeDBClusters API.
+
+## 3.171.1 - 2020-12-17
+
+* `Aws\` - Fix using ecs credentials provider on multi-threaded servers
+* `Aws\ConfigService` - Adding PutExternalEvaluation API which grants permission to deliver evaluation result to AWS Config
+* `Aws\Credentials` - Aligns the credential resolver to the documentation and other SDK behaviors.
+* `Aws\DLM` - Provide Cross-account copy event based policy support in DataLifecycleManager (DLM)
+* `Aws\EC2` - C6gn instances are powered by AWS Graviton2 processors and offer 100 Gbps networking bandwidth. These instances deliver up to 40% better price-performance benefit versus comparable x86-based instances
+* `Aws\Handler` - GuzzleHandler now accepts errors as well as exceptions on failure; errors are added to the body of the RejectionException from the promise
+* `Aws\KMS` - Added CreationDate and LastUpdatedDate timestamps to ListAliases API response
+* `Aws\Route53` - This release adds support for DNSSEC signing in Amazon Route 53.
+* `Aws\Route53Resolver` - Route 53 Resolver adds support for enabling resolver DNSSEC validation in virtual private cloud (VPC).
+* `Aws\SQS` - Amazon SQS adds queue attributes to enable high throughput FIFO.
+* `Aws\ServiceCatalog` - Support TagOptions sharing with Service Catalog portfolio sharing.
+* `Aws\imagebuilder` - This release adds support for building and distributing container images within EC2 Image Builder.
+
+## 3.171.0 - 2020-12-16
+
+* `Aws\CostExplorer` - This release updates the "MonitorArnList" from a list of String to be a list of Arn for both CreateAnomalySubscription and UpdateAnomalySubscription APIs
+* `Aws\LocationService` - Initial release of Amazon Location Service. A new geospatial service providing capabilities to render maps, geocode/reverse geocode, track device locations, and detect geofence entry/exit events.
+* `Aws\PrometheusService` - Documentation updates for Amazon Managed Service for Prometheus
+* `Aws\QuickSight` - QuickSight now supports connecting to federated data sources of Athena
+* `Aws\WellArchitected` - This is the first release of AWS Well-Architected Tool API support, use to review your workload and compare against the latest AWS architectural best practices.
+
 ## 3.170.0 - 2020-12-15
 
 * `Aws\GreengrassV2` - AWS IoT Greengrass V2 is a new major version of AWS IoT Greengrass. This release adds several updates such as modular components, continuous deployments, and improved ease of use.

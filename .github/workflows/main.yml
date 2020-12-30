@@ -40,7 +40,6 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
            php-version: '7.4'
-           tools: behat, composer:v2, phing, phpcbf, phpcpd, phpmd, phpunit
 
       - name: Checkout plugin
         uses: actions/checkout@v2
