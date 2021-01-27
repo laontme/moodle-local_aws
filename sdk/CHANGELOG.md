@@ -1,5 +1,91 @@
 # CHANGELOG
 
+## 3.172.1 - 2021-01-26
+
+* `Aws\Backup` - Documentation updates for AWS Backup
+
+## 3.172.0 - 2021-01-22
+
+* `Aws\EC2` - Introducing startDate field for CapacityReservation object for the date and time which the reservation started and adding reserved parameter for ModifyCapacityReservation.
+* `Aws\GreengrassV2` - Documentation updates that improve clarity and fix broken links.
+* `Aws\LexModelsV2` - This release adds support for Amazon Lex V2 APIs for model building.
+* `Aws\LexRuntimeV2` - This release adds support for Amazon Lex V2 APIs for runtime, including Streaming APIs for conversation management.
+* `Aws\RDS` - Documentation updates for Amazon RDS
+* `Aws\Redshift` - Update VPC endpoint field names.
+* `Aws\SSM` - Documentation updates for the ListDocumentFilters API action.
+
+## 3.171.21 - 2021-01-21
+
+* `Aws\Kafka` - Amazon MSK has added a new API that allows you to update all the brokers in the cluster to the specified type.
+* `Aws\ResourceGroupsTaggingAPI` - This release adds a new parameter ResourceARNList to Resource Groups Tagging api GetResources api to allow customers retrieve tag data for specific resources.
+* `Aws\SecurityHub` - This release of ASFF adds a new Action object and a new resource details object - AwsSsmPatchCompliance. It also adds several new attributes for the AwsEc2NetworkInterface resource type.
+
+## 3.171.20 - 2021-01-19
+
+* `Aws\ACMPCA` - ACM Private CA is launching additional certificate templates and API parameters. This allows customers to create custom certificates for their identity and secure communication use cases.
+* `Aws\Chime` - Add support for specifying ChimeBearer header as part of the request for Amazon Chime SDK messaging APIs. Documentation updates.
+* `Aws\ECS` - This release adds support to include task definition metadata information such as registeredAt, deregisteredAt, registeredBy as part of DescribeTaskDefinition API.
+
+## 3.171.19 - 2021-01-15
+
+* `Aws\SNS` - Documentation updates for Amazon SNS.
+
+## 3.171.18 - 2021-01-14
+
+* `Aws\CognitoIdentity` - Add Attributes For Access Control support for Amazon Cognito Identity Pools to facilitate access to AWS resources based on attributes from social and corporate identity providers
+* `Aws\Pinpoint` - Customers can create segments using 5 new filters. Filters can check for the presence of a substring in attributes and can perform time-based comparisons formatted as ISO_INSTANT datetimes.
+* `Aws\S3Control` - Amazon S3 Batch Operations now supports restoring objects from the S3 Intelligent-Tiering Archive Access and Deep Archive Access tiers.
+* `Aws\SageMaker` - This feature allows customers to enable/disable model caching on Multi-Model endpoints.
+
+## 3.171.17 - 2021-01-13
+
+* `Aws\FraudDetector` - Added support for cancelling a model version that is TRAINING_IN_PROGRESS.
+* `Aws\Personalize` - Miscellaneous updates and improvements to the documentation
+
+## 3.171.16 - 2021-01-12
+
+* `Aws\AppStream` - Adds support for the Smart Card Redirection feature
+* `Aws\AuditManager` - This release introduces tag support for assessment frameworks. You can now add, remove, and get tags from existing frameworks, and specify the tags to apply when creating a custom framework.
+* `Aws\ElastiCache` - Documentation updates for elasticache
+* `Aws\Lightsail` - This release adds IPv6 support for Amazon Lightsail instances, container services, CDN distributions, and load balancers.
+* `Aws\SSM` - AWS Systems Manager adds pagination support for DescribeDocumentPermission API
+
+## 3.171.15 - 2021-01-11
+
+* `Aws\KMS` - Adds support for filtering grants by grant ID and grantee principal in ListGrants requests to AWS KMS.
+* `Aws\RDS` - This releases adds support for Major Version Upgrades on Aurora MySQL Global Clusters. Customers will be able to upgrade their whole Aurora MySQL Global Cluster to a new major engine version.
+
+## 3.171.14 - 2021-01-07
+
+* `Aws\CodePipeline` - Adding cancelled status and summary for executions aborted by pipeline updates.
+* `Aws\DevOpsGuru` - Add resourceHours field in GetAccountHealth API to show total number of resource hours AWS Dev Ops Guru has done work for in the last hour.
+* `Aws\MediaConvert` - AWS Elemental MediaConvert SDK has added support for I-Frame-only HLS manifest generation in CMAF outputs.
+
+## 3.171.13 - 2021-01-06
+
+* `Aws\AutoScaling` - This update increases the number of instance types that can be added to the overrides within an mixed instances group configuration.
+* `Aws\AutoScalingPlans` - Documentation updates for AWS Auto Scaling
+* `Aws\Transfer` - This release adds support for Amazon EFS, so customers can transfer files over SFTP, FTPS and FTP in and out of Amazon S3 as well as Amazon EFS.
+
+## 3.171.12 - 2021-01-05
+
+* `Aws\ApplicationAutoScaling` - Documentation updates for Application Auto Scaling
+* `Aws\CostExplorer` - - ### Features - Add new GetCostcategories API - Support filter for GetDimensions, GetTags and GetCostcategories api - Support sortBy metrics for GetDimensions, GetTags and GetCostcategories api
+
+## 3.171.11 - 2021-01-04
+
+* `Aws\CloudSearch` - This release adds support for new Amazon CloudSearch instances.
+* `Aws\HealthLake` - Amazon HealthLake now supports exporting data from FHIR Data Stores in Preview.
+
+## 3.171.10 - 2020-12-31
+
+* `Aws\ServiceCatalog` - Enhanced Service Catalog DescribeProvisioningParameters API to return new parameter constraints, i.e., MinLength, MaxLength, MinValue, MaxValue, ConstraintDescription and AllowedPattern
+
+## 3.171.9 - 2020-12-30
+
+* `Aws\ElastiCache` - Documentation updates for elasticache
+* `Aws\Macie2` - This release of the Amazon Macie API includes miscellaneous updates and improvements to the documentation.
+
 ## 3.171.8 - 2020-12-29
 
 * `Aws\ACMPCA` - This release adds a new parameter "CsrExtensions" in the "CertificateAuthorityConfiguration" data structure, which allows customers to add the addition of KU and SIA into the CA CSR.
