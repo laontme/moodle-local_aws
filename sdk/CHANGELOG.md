@@ -1,5 +1,78 @@
 # CHANGELOG
 
+## 3.173.4 - 2021-02-05
+
+* `Aws\ElasticLoadBalancingv2` - Adds a target group attribute for client IP preservation for Network Load Balancers.
+* `Aws\Macie` - Documentation updates for Amazon Macie Classic. We replaced the term "master account" with the term "administrator account." An administrator account is used to centrally manage multiple accounts.
+* `Aws\Organizations` - Added support for a few additional exception codes for some AWS Organizations APIs.
+
+## 3.173.3 - 2021-02-04
+
+* `Aws\Appflow` - Adding schedule offset as an input for scheduled flows in CreateFlow API. Also, adding data pull start time and data pull end time for DescribeFlowExecutionRecords API response.
+* `Aws\Athena` - Adds the Athena ListEngineVersions action and the EngineVersion data type. ListEngineVersions returns the available Athena engine versions, including Auto, as a list of EngineVersion objects.
+* `Aws\DLM` - Provide support for EBS Local Snapshots on AWS Outpost in Data Lifecycle Manager (DLM).
+* `Aws\EC2` - AWS Outposts now supports EBS local snapshots on Outposts that allows customers to store snapshots of EBS volumes and AMIs locally on S3 on Outposts.
+* `Aws\EMRContainers` - This release is to correct the timestamp format to ISO8601 for the date parameters in the describe and list API response objects of Job Run and Virtual Clusters.
+* `Aws\QuickSight` - API release for field folders feature.
+
+## 3.173.2 - 2021-02-04
+
+* `Aws\S3` - This release fixes an issue with URL generation
+
+## 3.173.1 - 2021-02-03
+
+* `Aws\AuditManager` - This release adds AccessDeniedException to GetServicesInScope API.
+* `Aws\CodeBuild` - Documentation updates for codebuild
+* `Aws\ComputeOptimizer` - Documentation updates for Compute Optimizer
+* `Aws\CostExplorer` - Clarify valid values for the filter parameter for certain APIs.
+* `Aws\EC2` - EC2 Public IP now supports API for setting PTR records on Elastic IP address.
+* `Aws\GlueDataBrew` - This release adds the DescribeJobRun API to allow customers retrieve details of a given job run
+* `Aws\IoTSiteWise` - Update AccessPolicy API input to support IAM role for IAM mode. Iam role is added as part of accessPolicyIdentity.
+* `Aws\Lambda` - Support for creating Lambda Functions using 'nodejs14.x'
+* `Aws\S3` - Fix issue with s3 request uri generation
+* `Aws\SecurityHub` - Added a ProductArn parameter to DescribeProducts. ProductArn is used to identify the integration to return details for.
+* `Aws\WorkMail` - Increased maximum length of ipRanges values for Access Control Rules from 10 to 1024.
+
+## 3.173.0 - 2021-02-02
+
+* `Aws\` - Added privatelink functionality
+* `Aws\AppMesh` - App Mesh now supports mutual TLS with two-way peer authentication. You can specify client certificates, server-side TLS validation, and matching of Subject Alternative Names.
+* `Aws\ApplicationAutoScaling` - With this release, scheduled actions of Application Auto Scaling can be created in the local time zone and automatically adjusted according to daylight saving changes.
+* `Aws\IoTWireless` - Add enum value MqttTopic for Destination ExpressionType, add LoRaWANNetworkServerCertificateId for GetWirelessGatewayCertificate API
+* `Aws\LocationService` - Doc only update for Amazon Location Maps that fixes a customer related issue regarding MapConfiguration
+* `Aws\LookoutforVision` - This release includes the General Availability (GA) SDK for Amazon Lookout for Vision. New for GA is tagging support for Amazon Lookout for Vision models.
+* `Aws\MediaLive` - AWS Elemental MediaLive now supports Image Media Playlists on HLS outputs, version 0.4 (trick-mode).
+* `Aws\Organizations` - Documentation updates for AWS Organizations.
+* `Aws\RDSDataService` - With the Data API, you can now use UUID and JSON data types as input to your database. Also with the Data API, you can now have a LONG type value returned from your database as a STRING value.
+* `Aws\Route53` - Documentation updates for Route 53
+* `Aws\S3Control` - Amazon S3 Batch Operations now supports Delete Object Tagging
+
+## 3.172.4 - 2021-01-29
+
+* `Aws\Connect` - Added API to manage queues or get hours of operation for a queue programmatically, which can be used to create new/update queues, or take actions when skills are outside of their hours of operation.
+* `Aws\LexModelsV2` - Fixed bug where incorrect Content-Type header was being sent to the LexModelsV2 service
+* `Aws\Macie2` - This release of the Amazon Macie API adds support for using object prefixes to refine the scope of a classification job.
+* `Aws\MediaLive` - "AWS Elemental MediaLive now supports output to a private VPC. When this property is specified, the output will egress from a user specified VPC."
+* `Aws\TranscribeStreamingService` - Amazon Transcribe Streaming Medical now supports Protected Health Information (PHI) identification which enables you to identify PHI entities based on HIPAA Privacy Rule.
+
+## 3.172.3 - 2021-01-28
+
+* `Aws\CloudWatch` - Update to SDK to support label time zones in CloudWatch GetMetricData
+* `Aws\GlueDataBrew` - This SDK release adds support for specifying a custom delimiter for input CSV datasets and for CSV job outputs.
+* `Aws\IoT` - Documentation updates for IoT DeleteOTAUpdate API
+* `Aws\ManagedBlockchain` - This release supports tagging on Amazon Managed Blockchain resources.
+* `Aws\RoboMaker` - This release allows Robomaker customers to specify configuration for uploading logs and artifacts generated by their simulation jobs.
+* `Aws\WellArchitected` - Documentation updates for AWS Well-Architected Tool
+
+## 3.172.2 - 2021-01-27
+
+* `Aws\AccessAnalyzer` - This release adds Secrets Manager secrets as a supported resource in IAM Access Analyzer to help you identify secrets that can be accessed from outside your account or AWS organization.
+* `Aws\CustomerProfiles` - This release makes Uri a required parameter in GetIntegrationRequest and DeleteIntegrationRequest.
+* `Aws\ElastiCache` - Add support to pass ParameterGroup name as part updating Engine Version of Global Datastore.
+* `Aws\ElasticsearchService` - Amazon Elasticsearch Service adds support for node-to-node encryption and encryption at rest for existing domains running Elasticsearch version 6.7 and above
+* `Aws\Lightsail` - Documentation updates for Lightsail
+* `Aws\SesV2` - This release includes the ability to assign a configuration set to an email identity (a domain or email address), which allows the settings from the configuration set to be applied to the identity.
+
 ## 3.172.1 - 2021-01-26
 
 * `Aws\Backup` - Documentation updates for AWS Backup
