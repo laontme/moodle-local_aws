@@ -53,19 +53,12 @@ jobs:
           extensions: mbstring, pgsql, mysqli, gd, zip
           tools: composer, behat, phpunit, phpmd, phpcbf, phpcpd, psalm, phpcs
 
-      - name: checkout moodle-plugin-ci
-        uses: actions/checkout@v2
-        with:
-          repository: moodlehq/moodle-plugin-ci
-          path: ci
-
       - name: composer
         run: |
-           composer install
-           echo "$(cd bin; pwd)" >> $GITHUB_PATH
-           echo "$(cd vendor/bin; pwd)" >> $GITHUB_PATH
-           sudo locale-gen en_AU.UTF-8
-        working-directory: ci
+          composer create-project -n --no-dev --prefer-dist moodlehq/moodle-plugin-ci ci ^3
+          echo $(cd ci/bin; pwd) >> $GITHUB_PATH
+          echo $(cd ci/vendor/bin; pwd) >> $GITHUB_PATH
+          sudo locale-gen en_AU.UTF-8
 
       - name: install Moodle
         run: moodle-plugin-ci install -v --db-host=127.0.0.1 --plugin this-plugin --no-init

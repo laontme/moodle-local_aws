@@ -1,5 +1,53 @@
 # CHANGELOG
 
+## 3.173.9 - 2021-02-15
+
+* `Aws\ConfigService` - Added option to provide KMS key to AWS Config DeliveryChannel
+* `Aws\KinesisVideoArchivedMedia` - The ListFragments and GetMediaForFragmentList APIs now support StreamName or StreamARN as input parameters.
+* `Aws\Lightsail` - Documentation updates for Lightsail
+* `Aws\MediaLive` - AWS MediaLive now supports Automatic-Input-Failover for CDI Inputs.
+* `Aws\MediaTailor` - MediaTailor now supports specifying aliases for dynamic variables. This allows use cases such as binding multiple origin domains to a single MediaTailor playback configuration.
+* `Aws\Pinpoint` - Lets customers use origination number when specifying SMS message configuration for Campaigns and Journeys.
+* `Aws\RedshiftDataAPIService` - This release enables fine grant access control in ListStatements, GetStatementResult, CancelStatement and DescribeStatement.
+* `Aws\WorkMailMessageFlow` - This release allows customers to update email messages as they flow in and out of Amazon WorkMail
+
+## 3.173.8 - 2021-02-12
+
+* `Aws\AppSync` - Approve release for appsync local on pipeline resolver
+* `Aws\CodePipeline` - The release provides new GetActionType and UpdateActionType APIs for viewing and editing action types in CodePipeline.
+* `Aws\Detective` - The API definition now indicates that the format for timestamps is an ISO 8601 date-time string
+* `Aws\EKS` - Amazon EKS now supports OpenId Connect (OIDC) compatible identity providers as a user authentication option
+* `Aws\ElasticLoadBalancingv2` - Adds a target group attribute for application-based stickiness for Application Load Balancers and an update to the client IP preservation attribute for Network Load Balancers.
+* `Aws\IAM` - AWS Identity and Access Management now supports tagging for the following resources: customer managed policies, identity providers, instance profiles, server certificates, and virtual MFA devices.
+* `Aws\Macie2` - This release of the Amazon Macie API replaces the term master account with the term administrator account, including deprecating APIs that use the previous term and adding APIs that use the new term.
+* `Aws\PersonalizeEvents` - Increased maximum char size of PutUsers and PutItems properties.
+* `Aws\RDS` - EngineMode in the response of DescribeDBClusterSnapshots. SupportedEngineModes, SupportsParallelQuery and SupportsGlobalDatabases in ValidUpgradeTarget of DBEngineVersions in DescribeDBEngineVersions.
+* `Aws\WAFV2` - Added the option to inspect the web request body as parsed and filtered JSON (new FieldToMatch type JsonBody), in addition to the existing option to inspect the web request body as plain text.
+
+## 3.173.7 - 2021-02-11
+
+* `Aws\GlueDataBrew` - This release adds support for profile job sampling, which determines the number of rows on which the profile job will be executed.
+* `Aws\RDS` - Adding support for RDS Aurora Global Database Failover
+
+## 3.173.6 - 2021-02-09
+
+* `Aws\GameLift` - GameLift FleetIQ users can now use AMD instance families in supported Regions. In addition, FlexMatch matchmaking notification now supports SNS FIFO topics.
+* `Aws\MediaConvert` - AWS Elemental MediaConvert SDK has added support for WMA audio only ingest, SMPTE-TT text and image caption ingest, and MPEG-2 video in MXF OP1a outputs.
+* `Aws\QLDBSession` - This release adds CapacityExceededException to the AWS QLDBSession API.
+* `Aws\QuickSight` - QuickSight now supports Python's paginators for Exploration APIs.
+* `Aws\SageMaker` - Add a new optional FrameworkVersion field to Sagemaker Neo CreateCompilationJob API
+
+## 3.173.5 - 2021-02-08
+
+* `Aws\CloudTrail` - ConflictException is now thrown when certain operations are called on resources before CloudTrail has time to load the resources. Two new exceptions have been added to the PutInsightSelectors API.
+* `Aws\DataExchange` - This release introduces the new ExportRevision job type, which allows for the export of an entire revision.
+* `Aws\ElastiCache` - Documentation updates for elasticache
+* `Aws\ElasticLoadBalancingv2` - Adds a target group attribute for application-based stickiness for Application Load Balancers.
+* `Aws\GlobalAccelerator` - Global Accelerator now supports bringing your own IP addresses for custom routing accelerators
+* `Aws\IVS` - Fixed an issue where StreamStartTime could not be unmarshalled from response. Changed DeleteChannel and DeleteStreamKey response codes to 204.
+* `Aws\IoTSiteWise` - Recall CreatePresignedPortalUrl API
+* `Aws\Macie2` - This release of the Amazon Macie API adds support for specifying a time range in queries for usage data.
+
 ## 3.173.4 - 2021-02-05
 
 * `Aws\ElasticLoadBalancingv2` - Adds a target group attribute for client IP preservation for Network Load Balancers.
