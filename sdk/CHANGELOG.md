@@ -1,5 +1,73 @@
 # CHANGELOG
 
+## 3.173.19 - 2021-03-01
+
+* `Aws\AlexaForBusiness` - Added support for optional tags in CreateAddressBook, CreateConferenceProvider, CreateContact, CreateGatewayGroup, CreateNetworkProfile and RegisterAVSDevice APIs.
+* `Aws\CodePipeline` - Added a new field to the ListPipelines API to allow maximum search results of 1000
+* `Aws\EKS` - Adding new error code AdmissionRequestDenied for Addons in EKS
+* `Aws\SSM` - Add Support for Patch Manger Baseline Override parameter.
+
+## 3.173.18 - 2021-02-26
+
+* `Aws\EKS` - Amazon EKS now supports adding KMS envelope encryption to existing clusters to enhance security for secrets
+* `Aws\EMR` - Added UpdateStudio API that allows updating a few attributes of an EMR Studio.
+* `Aws\S3` - Add RequestPayer to GetObjectTagging and PutObjectTagging.
+* `Aws\SSOAdmin` - Relax constraint on List* API pagination tokens to include underscore character
+
+## 3.173.17 - 2021-02-25
+
+* `Aws\Detective` - Changed "master account" to "administrator account." A new AdministratorId field replaces the deprecated MasterId field. Added an option to disable email notifications for member account invitations.
+* `Aws\GlueDataBrew` - This SDK release adds two new dataset features: 1) support for specifying the file format for a dataset, and 2) support for specifying whether the first row of a CSV or Excel file contains a header.
+* `Aws\Lightsail` - Documentation updates for Lightsail
+* `Aws\Transfer` - Corrected the upper limit for TestIdentityProvider input lengths to 1024 characters
+* `Aws\imagebuilder` - This release introduces a new API (ListImagePackages) for listing packages installed on an image, and adds support for GP3 volume types, and for specifying a time zone in an image pipeline schedule.
+
+## 3.173.16 - 2021-02-24
+
+* `Aws\Appflow` - # Adding 'Amazon Honeycode' , 'Amazon Lookout for Metrics' and 'Amazon Connect Customer Profiles' as Destinations.
+* `Aws\ComputeOptimizer` - Documentation updates for Compute Optimizer
+* `Aws\ECRPublic` - This release adds support for AWS tags on Amazon ECR Public repositories.
+* `Aws\ElasticsearchService` - Amazon Elasticsearch Service now supports Auto-Tune, which monitors performance metrics and automatically optimizes domains
+* `Aws\MediaPackageVod` - AWS Elemental MediaPackage provides access logs that capture detailed information about requests sent to a customer's MediaPackage VOD packaging group.
+
+## 3.173.15 - 2021-02-23
+
+* `Aws\AutoScaling` - Adds a new optional IncludeDeletedGroups parameter to the DescribeScalingActivities API.
+* `Aws\Connect` - Documentation updates for AWS Connect (MediaConcurrency Limit).
+* `Aws\Glue` - Updating the page size for Glue catalog getter APIs.
+* `Aws\IoTEvents` - This release adds an Analyze feature to AWS IoT Events that lets customers analyze their detector models for runtime issues.
+* `Aws\Pinpoint` - Enables AWS Pinpoint customers to use Entity Id and Template Id when sending SMS message. These parameters can be obtained from the regulatory body of the country where you are trying to send the SMS.
+* `Aws\QuickSight` - Documentation updates for QuickSight Row Level Security
+* `Aws\RedshiftDataAPIService` - This release adds an additional parameter 'ConnectedDatabase' into ListSchemasRequest, ListTablesRequest and DescribeTableRequest to support the metadata sharing across databases.
+* `Aws\S3Control` - Documentation updates for s3-control
+
+## 3.173.14 - 2021-02-22
+
+* `Aws\SageMaker` - Amazon SageMaker now supports core dump for SageMaker Endpoints and direct invocation of a single container in a SageMaker Endpoint that hosts multiple containers.
+* `Aws\SageMakerRuntime` - SageMaker Runtime now supports a new TargetContainerHostname header to invoke a model in a specific container if the endpoint hosts multiple containers and is configured to use direct invocation.
+
+## 3.173.13 - 2021-02-19
+
+* `Aws\RDS` - Added awsBackupRecoveryPointArn in ModifyDBInstanceRequest and in the response of ModifyDBInstance.
+
+## 3.173.12 - 2021-02-18
+
+* `Aws\CloudFormation` - Adding the 'callAs' parameter to all CloudFormation StackSets APIs except getTemplateSummary to support creating and managing service-managed StackSets with AWS Organizations Delegated Administrators
+* `Aws\CodeBuild` - AWS CodeBuild now allows you to specify a separate bucket owner as part of the S3 destination in a report group.
+* `Aws\Health` - Documentation updates for health
+* `Aws\SageMaker` - This release adds expires-in-seconds parameter to the CreatePresignedDomainUrl API for support of a configurable TTL.
+
+## 3.173.11 - 2021-02-17
+
+* `Aws\ConfigService` - Added INSUFFICIENT_DATA in ConformancePackComplianceType.
+* `Aws\EC2` - This release includes a new filter for describe-vpc-endpoint-services.
+* `Aws\LookoutforVision` - This release for Amazon Lookout for Vision includes documentation updates and a correction to the Status field returned in the response from StartModel and StopModel.
+
+## 3.173.10 - 2021-02-16
+
+* `Aws\CodeBuild` - This release provides per-project limits for the number of concurrent builds
+* `Aws\DevOpsGuru` - Amazon DevOps Guru is GA ready. This API update added a describeFeedback Api allows users to view submitted insight feedback. The release date is 02/16/2021
+
 ## 3.173.9 - 2021-02-15
 
 * `Aws\ConfigService` - Added option to provide KMS key to AWS Config DeliveryChannel
