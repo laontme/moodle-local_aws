@@ -17,4 +17,9 @@ rm $SDKDIR/sdk.zip
 echo
 echo 'Go update version.php'
 echo $SDKDIR
-
+VERS=$(sed '3q;d' CHANGELOG.md | awk '{print $2}')
+echo $VERS
+cd ..
+sed '30s/.*/$plugin->release   = "'$VERS'";/' version.php
+git commit -am $VERS
+git push ewa
