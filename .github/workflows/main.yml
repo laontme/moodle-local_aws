@@ -75,7 +75,7 @@ jobs:
         run: moodle-plugin-ci phpdoc local/aws || true
         working-directory: moodle
         env:
-          dbtype: dbtype: ${{ matrix.database }}
+          dbtype: ${{ matrix.database }}
 
       - name: savepoints
         run: moodle-plugin-ci savepoints local/aws
