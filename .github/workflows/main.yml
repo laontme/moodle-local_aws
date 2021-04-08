@@ -46,6 +46,7 @@ jobs:
            echo "$(cd bin; pwd)" >> $GITHUB_PATH
            echo "$(cd vendor/bin; pwd)" >> $GITHUB_PATH
            sudo locale-gen en_AU.UTF-8
+           sudo cp ../moodle/config-dist.php ../moodle/config.php
         working-directory: ci
 
       - name: phplint
@@ -62,6 +63,10 @@ jobs:
 
       - name: codechecker
         run: moodle-plugin-ci codechecker local/aws
+        working-directory: moodle
+
+      - name: validate
+        run: moodle-plugin-ci validate local/aws
         working-directory: moodle
 
       - name: phpdoc
