@@ -47,6 +47,7 @@ jobs:
            echo "$(cd vendor/bin; pwd)" >> $GITHUB_PATH
            sudo locale-gen en_AU.UTF-8
            sudo cp ../moodle/config-dist.php ../moodle/config.php
+           sudo mkdir -p /home/example/moodledata
         working-directory: ci
 
       - name: phplint
