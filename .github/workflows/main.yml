@@ -18,7 +18,7 @@ jobs:
       - name: checkout moodle
         uses: actions/checkout@v2
         with:
-          repository: moodlehq/moodle
+          repository: moodle/moodle
           path: moodle
           ref: ${{ matrix.moodle-branch }}
 
