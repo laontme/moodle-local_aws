@@ -11,7 +11,6 @@ jobs:
       matrix:
         moodle-branch: ['master', 'MOODLE_311_STABLE', 'MOODLE_310_STABLE', 'MOODLE_39_STABLE']
         php: ['7.4']
-        database: ['mysqli']
 
     name: ${{ matrix.moodle-branch }}  php ${{ matrix.php }}
 
@@ -71,20 +70,10 @@ jobs:
         run: moodle-plugin-ci validate local/aws
         working-directory: moodle
 
-      - name: phpdoc
-        run: moodle-plugin-ci phpdoc local/aws || true
-        working-directory: moodle
-        env:
-          dbtype: ${{ matrix.database }}
-
       - name: savepoints
         run: moodle-plugin-ci savepoints local/aws
         working-directory: moodle
 
       - name: mustache
         run: moodle-plugin-ci mustache local/aws
-        working-directory: moodle
-
-      - name: grunt
-        run: moodle-plugin-ci grunt local/aws || true
         working-directory: moodle
