@@ -64,8 +64,8 @@ jobs:
         run: moodle-plugin-ci codechecker local/aws
         working-directory: moodle
 
-      - name: validate
-        run: moodle-plugin-ci validate local/aws
+      - name: phpdoc
+        run: moodle-plugin-ci phpdoc local/aws
         working-directory: moodle
 
       - name: savepoints
