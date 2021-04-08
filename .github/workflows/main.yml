@@ -49,25 +49,25 @@ jobs:
         working-directory: ci
 
       - name: phplint
-        run: moodle-plugin-ci phplint
+        run: moodle-plugin-ci phplint local/aws
 
       - name: phpcpd
-        run: moodle-plugin-ci phpcpd
+        run: moodle-plugin-ci phpcpd local/aws
 
       - name: phpmd
-        run: moodle-plugin-ci phpmd
+        run: moodle-plugin-ci phpmd local/aws
 
       - name: codechecker
-        run: moodle-plugin-ci codechecker
+        run: moodle-plugin-ci codechecker local/aws
 
       - name: validate
-        run: moodle-plugin-ci validate
+        run: moodle-plugin-ci validate local/aws
 
       - name: savepoints
-        run: moodle-plugin-ci savepoints
+        run: moodle-plugin-ci savepoints local/aws
 
       - name: mustache
-        run: moodle-plugin-ci mustache
+        run: moodle-plugin-ci mustache local/aws
 
       - name: grunt
-        run: moodle-plugin-ci grunt
+        run: moodle-plugin-ci grunt local/aws
