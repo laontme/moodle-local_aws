@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## 3.178.8 - 2021-04-22
+
+* `Aws\CognitoIdentityProvider` - Documentation updates for cognito-idp
+* `Aws\ElastiCache` - This release introduces log delivery of Redis slow log from Amazon ElastiCache.
+* `Aws\ForecastService` - This release adds EstimatedTimeRemaining minutes field to the DescribeDatasetImportJob, DescribePredictor, DescribeForecast API response which denotes the time remaining to complete the job IN_PROGRESS.
+* `Aws\SecurityHub` - Replaced the term "master" with "administrator". Added new actions to replace AcceptInvitation, GetMasterAccount, and DisassociateFromMasterAccount. In Member, replaced MasterId with AdministratorId.
+
+## 3.178.7 - 2021-04-21
+
+* `Aws\CloudFormation` - Added support for creating and updating stack sets with self-managed permissions from templates that reference macros.
+* `Aws\Detective` - Added parameters to track the data volume in bytes for a member account. Deprecated the existing parameters that tracked the volume as a percentage of the allowed volume for a behavior graph. Changes reflected in MemberDetails object.
+* `Aws\GroundStation` - Support new S3 Recording Config allowing customers to write downlink data directly to S3.
+* `Aws\Redshift` - Add operations: AddPartner, DescribePartners, DeletePartner, and UpdatePartnerStatus to support tracking integration status with data partners.
+* `Aws\kendra` - Amazon Kendra now enables users to override index-level boosting configurations for each query.
+
+## 3.178.6 - 2021-04-19
+
+* `Aws\CostExplorer` - Adding support for Sagemaker savings plans in GetSavingsPlansPurchaseRecommendation API
+* `Aws\SavingsPlans` - Added support for Amazon SageMaker in Machine Learning Savings Plans
+
 ## 3.178.5 - 2021-04-15
 
 * `Aws\DatabaseMigrationService` - AWS DMS added support of TLS for Kafka endpoint. Added Describe endpoint setting API for DMS endpoints.
