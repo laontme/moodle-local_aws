@@ -1,5 +1,51 @@
 # CHANGELOG
 
+## 3.179.2 - 2021-04-30
+
+* `Aws\CloudFront` - CloudFront now supports CloudFront Functions, a native feature of CloudFront that enables you to write lightweight functions in JavaScript for high-scale, latency-sensitive CDN customizations.
+* `Aws\CustomerProfiles` - This release introduces GetMatches and MergeProfiles APIs to fetch and merge duplicate profiles
+* `Aws\ForecastService` - Added new DeleteResourceTree operation that helps in deleting all the child resources of a given resource including the given resource.
+* `Aws\MarketplaceCatalog` - Allows user defined names for Changes in a ChangeSet. Users can use ChangeNames to reference properties in another Change within a ChangeSet. This feature allows users to make changes to an entity when the entity identifier is not yet available while constructing the StartChangeSet request.
+* `Aws\Personalize` - Update URL for dataset export job documentation.
+* `Aws\RoboMaker` - Adds ROS2 Foxy as a supported Robot Software Suite Version and Gazebo 11 as a supported Simulation Software Suite Version
+* `Aws\S3` - Generalized DateTime to DateTimeInterface in an S3Client's createPresignedRequest function and in Cloudfront/LogFileIterator's NormalizeDateValue function
+
+## 3.179.1 - 2021-04-29
+
+* `Aws\Chime` - Increase AppInstanceUserId length to 64 characters
+* `Aws\ECS` - Add support for EphemeralStorage on TaskDefinition and TaskOverride
+* `Aws\Macie2` - The Amazon Macie API now provides S3 bucket metadata that indicates whether a bucket policy requires server-side encryption of objects when objects are uploaded to the bucket.
+* `Aws\Organizations` - Minor text updates for AWS Organizations API Reference
+
+## 3.179.0 - 2021-04-28
+
+* `Aws\CloudFormation` - Add CallAs parameter to GetTemplateSummary to enable use with StackSets delegated administrator integration
+* `Aws\Connect` - Updated max number of tags that can be attached from 200 to 50. MaxContacts is now an optional parameter for the UpdateQueueMaxContact API.
+* `Aws\IoTSiteWise` - AWS IoT SiteWise interpolation API will get interpolated values for an asset property per specified time interval during a period of time.
+* `Aws\MediaPackageVod` - MediaPackage now offers the option to place your Sequence Parameter Set (SPS), Picture Parameter Set (PPS), and Video Parameter Set (VPS) encoder metadata in every video segment instead of in the init fragment for DASH and CMAF endpoints.
+* `Aws\NimbleStudio` - Amazon Nimble Studio is a virtual studio service that empowers visual effects, animation, and interactive content teams to create content securely within a scalable, private cloud service.
+
+## 3.178.11 - 2021-04-27
+
+* `Aws\AuditManager` - This release restricts using backslashes in control, assessment, and framework names. The controlSetName field of the UpdateAssessmentFrameworkControlSet API now allows strings without backslashes.
+* `Aws\S3` - Bugfix to apply the correct signature to certain functions in S3 object lambda requests
+
+## 3.178.10 - 2021-04-26
+
+* `Aws\CodeGuruReviewer` - Include KMS Key Details in Repository Association APIs to enable usage of customer managed KMS Keys.
+* `Aws\EC2` - Adding support for Red Hat Enterprise Linux with HA for Reserved Instances.
+* `Aws\EKS` - This release updates existing Amazon EKS input validation so customers will see an InvalidParameterException instead of a ParamValidationError when they enter 0 for minSize and/or desiredSize. It also adds LaunchTemplate information to update responses and a new "CUSTOM" value for AMIType.
+* `Aws\Glue` - Adding Kafka Client Auth Related Parameters
+* `Aws\IoTWireless` - Add a new optional field MessageType to support Sidewalk devices in SendDataToWirelessDevice API
+* `Aws\KinesisAnalyticsV2` - Amazon Kinesis Data Analytics now supports custom application maintenance configuration using UpdateApplicationMaintenanceConfiguration API for Apache Flink applications. Customers will have visibility when their application is under maintenance status using 'MAINTENANCE' application status.
+* `Aws\MediaConvert` - Documentation updates for mediaconvert
+* `Aws\Personalize` - Added support for exporting data imported into an Amazon Personalize dataset to a specified data source (Amazon S3 bucket).
+
+## 3.178.9 - 2021-04-23
+
+* `Aws\MediaPackage` - Add support for Widevine DRM on CMAF origin endpoints. Both Widevine and FairPlay DRMs can now be used simultaneously, with CBCS encryption.
+* `Aws\SNS` - Amazon SNS adds two new attributes, TemplateId and EntityId, for using sender IDs to send SMS messages to destinations in India.
+
 ## 3.178.8 - 2021-04-22
 
 * `Aws\CognitoIdentityProvider` - Documentation updates for cognito-idp
