@@ -1,5 +1,47 @@
 # CHANGELOG
 
+## 3.180.5 - 2021-05-07
+
+* `Aws\Connect` - Adds tagging support for Connect APIs CreateIntegrationAssociation and CreateUseCase.
+* `Aws\LakeFormation` - This release adds Tag Based Access Control to AWS Lake Formation service
+* `Aws\LookoutMetrics` - Enforcing UUID style for parameters that are already in UUID format today. Documentation specifying eventual consistency of lookoutmetrics resources.
+
+## 3.180.4 - 2021-05-06
+
+* `Aws\Kafka` - IAM Access Control for Amazon MSK enables you to create clusters that use IAM to authenticate clients and to allow or deny Apache Kafka actions for those clients.
+* `Aws\SSM` - SSM feature release - ChangeCalendar integration with StateManager.
+* `Aws\ServiceDiscovery` - Bugfix: Improved input validation for RegisterInstance action, InstanceId field
+* `Aws\Snowball` - AWS Snow Family adds APIs for ordering and managing Snow jobs with long term pricing
+
+## 3.180.3 - 2021-05-05
+
+* `Aws\AuditManager` - This release updates the CreateAssessmentFrameworkControlSet and UpdateAssessmentFrameworkControlSet API data types. For both of these data types, the control set name is now a required attribute.
+* `Aws\KinesisAnalyticsV2` - Amazon Kinesis Analytics now supports RollbackApplication for Apache Flink applications to revert the application to the previous running version
+* `Aws\NimbleStudio` - Documentation Updates for Amazon Nimble Studio.
+* `Aws\SageMaker` - Amazon SageMaker Autopilot now provides the ability to automatically deploy the best model to an endpoint
+
+## 3.180.2 - 2021-05-05
+
+* `Aws\FinSpaceData` - Documentation updates for FinSpaceData API.
+* `Aws\finspace` - Documentation updates for FinSpace API.
+* `Aws\finspace` - Fixed bug where incorrect Content-Type header was being sent to the Finspace and FinspaceData services
+
+## 3.180.1 - 2021-05-04
+
+* `Aws\ACMPCA` - This release adds the KeyStorageSecurityStandard parameter to the CreateCertificateAuthority API to allow customers to mandate a security standard to which the CA key will be stored within.
+* `Aws\Chime` - This release adds the ability to search for and order international phone numbers for Amazon Chime SIP media applications.
+* `Aws\DevOpsGuru` - Added GetCostEstimation and StartCostEstimation to get the monthly resource usage cost and added ability to view resource health by AWS service name and to search insights be AWS service name.
+* `Aws\Health` - Documentation updates for health
+* `Aws\SageMaker` - Enable retrying Training and Tuning Jobs that fail with InternalServerError by setting RetryStrategy.
+
+## 3.180.0 - 2021-05-03
+
+* `Aws\Chime` - Added new BatchCreateChannelMembership API to support multiple membership creation for channels
+* `Aws\FinSpaceData` - This is the initial SDK release for the data APIs for Amazon FinSpace. Amazon FinSpace is a data management and analytics application for the financial services industry (FSI).
+* `Aws\MTurk` - Documentation updates for Amazon Mechanical Turk, GetAccountBalanceOperation operation
+* `Aws\SecurityHub` - Updated ASFF to add the following new resource details objects: AwsEc2NetworkAcl, AwsEc2Subnet, and AwsElasticBeanstalkEnvironment.
+* `Aws\finspace` - This is the initial SDK release for the management APIs for Amazon FinSpace. Amazon FinSpace is a data management and analytics service for the financial services industry (FSI).
+
 ## 3.179.2 - 2021-04-30
 
 * `Aws\CloudFront` - CloudFront now supports CloudFront Functions, a native feature of CloudFront that enables you to write lightweight functions in JavaScript for high-scale, latency-sensitive CDN customizations.
