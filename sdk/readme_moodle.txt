@@ -21,7 +21,7 @@ VERS=$(sed '3q;d' CHANGELOG.md | awk '{print $2}')
 echo $VERS
 cd ..
 sed '30s/.*/$plugin->release   = "'$VERS'";/' version.php
-sed '6s/.*/        <version>'$VERS'</version>/' thirdpartylibs.xml
+sed '6s/.*/        <version>'$VERS'<\/version>/' thirdpartylibs.xml
 git add sdk
 git commit -am $VERS
-git push ewa
+#git push ewa
