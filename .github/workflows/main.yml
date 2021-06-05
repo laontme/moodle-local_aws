@@ -22,17 +22,9 @@ jobs:
     steps:
       - name: checkout plugin
         uses: actions/checkout@v2
-        if: ${{ matrix.moodle-branch != 'master' }}
         with:
           path: this-plugin
           ref: main
-
-      - name: checkout plugin
-        uses: actions/checkout@v2
-        if: ${{ matrix.moodle-branch == 'master' }}
-        with:
-          path: this-plugin
-          ref: dev
 
       - name: setup PHP
         uses: shivammathur/setup-php@v2
