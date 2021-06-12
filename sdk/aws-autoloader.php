@@ -1663,13 +1663,13 @@ $mapping = array(
 
 spl_autoload_register(function ($class) use ($mapping) {
     if (isset($mapping[$class])) {
-        require_once $mapping[$class];
+        require_once_once $mapping[$class];
     }
 }, true);
 
-require_once __DIR__ . '/Aws/functions.php';
-require_once __DIR__ . '/GuzzleHttp/functions_include.php';
-require_once __DIR__ . '/GuzzleHttp/Psr7/functions_include.php';
-require_once __DIR__ . '/GuzzleHttp/Promise/functions_include.php';
-require_once __DIR__ . '/JmesPath/JmesPath.php';
-require_once __DIR__ . '/Symfony/Polyfill/Intl/Idn/bootstrap.php';
+require_once_once __DIR__ . '/Aws/functions.php';
+require_once_once __DIR__ . '/GuzzleHttp/functions_include.php';
+require_once_once __DIR__ . '/GuzzleHttp/Psr7/functions_include.php';
+require_once_once __DIR__ . '/GuzzleHttp/Promise/functions_include.php';
+require_once_once __DIR__ . '/JmesPath/JmesPath.php';
+require_once_once __DIR__ . '/Symfony/Polyfill/Intl/Idn/bootstrap.php';
