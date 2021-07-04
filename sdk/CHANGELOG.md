@@ -1,5 +1,32 @@
 # CHANGELOG
 
+## 3.185.6 - 2021-07-02
+
+* `Aws\EC2` - This release removes network-insights-boundary
+* `Aws\ElasticLoadBalancingv2` - Documentation updates for elasticloadbalancingv2
+
+## 3.185.5 - 2021-07-01
+
+* `Aws\EC2` - Adding a new reserved field to support future infrastructure improvements for Amazon EC2 Fleet.
+* `Aws\SQS` - Documentation updates for Amazon SQS.
+* `Aws\SageMaker` - SageMaker model registry now supports up to 5 containers and associated environment variables.
+
+## 3.185.4 - 2021-06-30
+
+* `Aws\AutoScaling` - Amazon EC2 Auto Scaling infrastructure improvements and optimizations.
+* `Aws\GlueDataBrew` - Adds support for the output of job results to the AWS Glue Data Catalog.
+* `Aws\MediaPackageVod` - Add support for Widevine DRM on CMAF packaging configurations. Both Widevine and FairPlay DRMs can now be used simultaneously, with CBCS encryption.
+* `Aws\SSMContacts` - Fixes the tag key length range to 128 chars, tag value length to 256 chars; Adds support for UTF-8 chars for contact and channel names, Allows users to unset name in UpdateContact API; Adds throttling exception to StopEngagement API, validation exception to APIs UntagResource, ListTagsForResource
+* `Aws\ServiceDiscovery` - AWS Cloud Map now allows configuring the TTL of the SOA record for a hosted zone to control the negative caching for new services.
+* `Aws\kendra` - Amazon Kendra Enterprise Edition now offered in smaller more granular units to enable customers with smaller workloads. Virtual Storage Capacity units now offer scaling in increments of 100,000 documents (up to 30GB) per unit and Virtual Query Units offer scaling increments of 8,000 queries per day.
+
+## 3.185.3 - 2021-06-28
+
+* `Aws\Glue` - Add JSON Support for Glue Schema Registry
+* `Aws\MediaConvert` - MediaConvert adds support for HDR10+, ProRes 4444, and XAVC outputs, ADM/DAMF support for Dolby Atmos ingest, and alternative audio and WebVTT caption ingest via HLS inputs. MediaConvert also now supports creating trickplay outputs for Roku devices for HLS, CMAF, and DASH output groups.
+* `Aws\Redshift` - Added InvalidClusterStateFault to the DisableLogging API, thrown when calling the API on a non available cluster.
+* `Aws\SageMaker` - Sagemaker Neo now supports running compilation jobs using customer's Amazon VPC
+
 ## 3.185.2 - 2021-06-25
 
 * `Aws\AmplifyBackend` - Imports an existing backend authentication resource.
