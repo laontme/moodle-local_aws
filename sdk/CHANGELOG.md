@@ -1,5 +1,46 @@
 # CHANGELOG
 
+## 3.185.20 - 2021-07-23
+
+* `Aws\S3Outposts` - Add on-premise access type support for endpoints
+* `Aws\SecurityHub` - Added product name, company name, and Region fields for security findings. Added details objects for RDS event subscriptions and AWS ECS services. Added fields to the details for AWS Elasticsearch domains.
+* `Aws\imagebuilder` - Update to documentation to reapply missing change to SSM uninstall switch default value and improve description.
+
+## 3.185.19 - 2021-07-22
+
+* `Aws\EC2` - This release allows customers to assign prefixes to their elastic network interface and to reserve IP blocks in their subnet CIDRs. These reserved blocks can be used to assign prefixes to elastic network interfaces or be excluded from auto-assignment.
+* `Aws\ElasticLoadBalancingv2` - Adds support for enabling TLS protocol version and cipher suite headers to be sent to backend targets for Application Load Balancers.
+* `Aws\GlueDataBrew` - This SDK release adds two new features: 1) Output to Native JDBC destinations and 2) Adding configurations to profile jobs
+* `Aws\MediaLive` - MediaLive now supports passing through style data on WebVTT caption outputs.
+* `Aws\QLDB` - Amazon QLDB now supports ledgers encrypted with customer managed KMS keys. Changes in CreateLedger, UpdateLedger and DescribeLedger APIs to support the changes.
+* `Aws\S3Control` - Documentation updates for Amazon S3-control
+
+## 3.185.18 - 2021-07-21
+
+* `Aws\CodeBuild` - AWS CodeBuild now allows you to set the access permissions for build artifacts, project artifacts, and log files that are uploaded to an Amazon S3 bucket that is owned by another account.
+* `Aws\EMR` - EMR now supports new DescribeReleaseLabel and ListReleaseLabel APIs. They can provide Amazon EMR release label details. You can programmatically list available releases and applications for a specific Amazon EMR release label.
+* `Aws\ElasticLoadBalancingv2` - Adds support for enabling TLS protocol version and cipher suite headers to be sent to backend targets for Application Load Balancers.
+* `Aws\IAM` - Documentation updates for AWS Identity and Access Management (IAM).
+* `Aws\Lambda` - New ResourceConflictException error code for PutFunctionEventInvokeConfig, UpdateFunctionEventInvokeConfig, and DeleteFunctionEventInvokeConfig operations.
+* `Aws\Personalize` - My AWS Service (placeholder) - Making minProvisionedTPS an optional parameter when creating a campaign. If not provided, it defaults to 1.
+* `Aws\Proton` - Documentation updates for AWS Proton
+* `Aws\RDS` - Adds the OriginalSnapshotCreateTime field to the DBSnapshot response object. This field timestamps the underlying data of a snapshot and doesn't change when the snapshot is copied.
+* `Aws\kendra` - Amazon Kendra now provides a data source connector for Amazon WorkDocs. For more information, see https://docs.aws.amazon.com/kendra/latest/dg/data-source-workdocs.html
+
+## 3.185.17 - 2021-07-20
+
+* `Aws\ComputeOptimizer` - Documentation updates for Compute Optimizer
+* `Aws\EC2` - Added idempotency to the CreateVolume API using the ClientToken request parameter
+
+## 3.185.16 - 2021-07-19
+
+* `Aws\DirectConnect` - Documentation updates for directconnect
+* `Aws\EMRContainers` - Updated DescribeManagedEndpoint and ListManagedEndpoints to return failureReason and stateDetails in API response.
+* `Aws\Health` - In the Health API, the maximum number of entities for the EventFilter and EntityFilter data types has changed from 100 to 99. This change is related to an internal optimization of the AWS Health service.
+* `Aws\LocationService` - Add five new API operations: UpdateGeofenceCollection, UpdateMap, UpdatePlaceIndex, UpdateRouteCalculator, UpdateTracker.
+* `Aws\RoboMaker` - This release allows customers to create a new version of WorldTemplates with support for Doors.
+* `Aws\imagebuilder` - Documentation updates for reversal of default value for additional instance configuration SSM switch, plus improved descriptions for semantic versioning.
+
 ## 3.185.15 - 2021-07-16
 
 * `Aws\AppIntegrationsService` - Documentation update for AppIntegrations Service
