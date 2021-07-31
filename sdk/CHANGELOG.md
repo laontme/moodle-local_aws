@@ -1,5 +1,48 @@
 # CHANGELOG
 
+## 3.186.3 - 2021-07-30
+
+* `Aws\AppSync` - AWS AppSync now supports a new authorization mode allowing you to define your own authorization logic using an AWS Lambda function.
+* `Aws\ElasticLoadBalancingv2` - Client Port Preservation ALB Attribute Launch
+* `Aws\SageMaker` - API changes with respect to Lambda steps in model building pipelines. Adds several waiters to async Sagemaker Image APIs. Add more instance types to AppInstanceType field
+* `Aws\SecretsManager` - Add support for KmsKeyIds in the ListSecretVersionIds API response
+
+## 3.186.2 - 2021-07-29
+
+* `Aws\Chime` - Adds support for live transcription of meetings with Amazon Transcribe and Amazon Transcribe Medical. The new APIs, StartMeetingTranscription and StopMeetingTranscription, control the generation of user-attributed transcriptions sent to meeting clients via Amazon Chime SDK data messages.
+* `Aws\EC2` - This release adds support for G4ad xlarge and 2xlarge instances powered by AMD Radeon Pro V520 GPUs and AMD 2nd Generation EPYC processors
+* `Aws\IoT` - Increase maximum credential duration of role alias to 12 hours.
+* `Aws\IoTSiteWise` - Added support for AWS IoT SiteWise Edge. You can now create an AWS IoT SiteWise gateway that runs on AWS IoT Greengrass V2. With the gateway, you can collect local server and equipment data, process the data, and export the selected data from the edge to the AWS Cloud.
+* `Aws\SavingsPlans` - Documentation update for valid Savings Plans offering ID pattern
+
+## 3.186.1 - 2021-07-28
+
+* `Aws\CloudFormation` - SDK update to support Importing existing Stacks to new/existing Self Managed StackSet - Stack Import feature.
+* `Aws\SSOAdmin` - Documentation updates for arn:aws:trebuchet:::service:v1:03a2216d-1cda-4696-9ece-1387cb6f6952
+
+## 3.186.0 - 2021-07-27
+
+* `Aws\Batch` - Add support for ListJob filters
+* `Aws\IoTAnalytics` - IoT Analytics now supports creating a dataset resource with IoT SiteWise MultiLayerStorage data stores, enabling customers to query industrial data within the service. This release includes adding JOIN functionality for customers to query multiple data sources in a dataset.
+* `Aws\IoTWireless` - Add SidewalkManufacturingSn as an identifier to allow Customer to query WirelessDevice, in the response, AmazonId is added in the case that Sidewalk device is return.
+* `Aws\LexModelsV2` - Add waiters that automatically poll for resource status for asynchronous operations, such as building a bot
+* `Aws\QuickSight` - Add support to use row-level security with tags when embedding dashboards for users not provisioned in QuickSight
+* `Aws\RedshiftDataAPIService` - Added structures to support new Data API operation BatchExecuteStatement, used to execute multiple SQL statements within a single transaction.
+* `Aws\Route53` - This release adds support for the RECOVERY_CONTROL health check type to be used in conjunction with Route53 Application Recovery Controller.
+* `Aws\Route53RecoveryCluster` - Amazon Route 53 Application Recovery Controller's routing control - Routing Control Data Plane APIs help you update the state (On/Off) of the routing controls to reroute traffic across application replicas in a 100% available manner.
+* `Aws\Route53RecoveryControlConfig` - Amazon Route 53 Application Recovery Controller's routing control - Routing Control Configuration APIs help you create and delete clusters, control panels, routing controls and safety rules. State changes (On/Off) of routing controls are not part of configuration APIs.
+* `Aws\Route53RecoveryReadiness` - Amazon Route 53 Application Recovery Controller's readiness check capability continually monitors resource quotas, capacity, and network routing policies to ensure that the recovery environment is scaled and configured to take over when needed.
+* `Aws\Shield` - Change name of DDoS Response Team (DRT) to Shield Response Team (SRT)
+
+## 3.185.21 - 2021-07-26
+
+* `Aws\CloudWatch` - SDK update to support creation of Cross-Account Metric Alarms and update API documentation.
+* `Aws\IdentityStore` - Documentation updates for SSO API Ref.
+* `Aws\Proton` - Documentation-only update links
+* `Aws\S3Control` - S3 Access Point aliases can be used anywhere you use S3 bucket names to access data in S3
+* `Aws\Synthetics` - CloudWatch Synthetics now supports visual testing in its canaries.
+* `Aws\Textract` - Adds support for AnalyzeExpense, a new API to extract relevant data such as contact information, items purchased, and vendor name, from almost any invoice or receipt without the need for any templates or configuration.
+
 ## 3.185.20 - 2021-07-23
 
 * `Aws\S3Outposts` - Add on-premise access type support for endpoints
