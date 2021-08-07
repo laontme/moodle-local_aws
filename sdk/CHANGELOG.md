@@ -1,5 +1,41 @@
 # CHANGELOG
 
+## 3.188.0 - 2021-08-06
+
+* `Aws\Athena` - Documentation updates for Athena.
+* `Aws\ChimeSDKIdentity` - The Amazon Chime SDK Identity APIs allow software developers to create and manage unique instances of their messaging applications.
+* `Aws\ChimeSDKMessaging` - The Amazon Chime SDK Messaging APIs allow software developers to send and receive messages in custom messaging applications.
+* `Aws\Connect` - This release adds support for agent status and hours of operation. For details, see the Release Notes in the Amazon Connect Administrator Guide.
+* `Aws\Lightsail` - This release adds support to track when a bucket access key was last used.
+* `Aws\Synthetics` - Documentation updates for Visual Monitoring feature and other doc ticket fixes.
+
+## 3.187.3 - 2021-08-05
+
+* `Aws\AutoScaling` - EC2 Auto Scaling adds configuration checks and Launch Template validation to Instance Refresh.
+* `Aws\LexModelsV2` - Customers can now toggle the active field on prompts and responses.
+
+## 3.187.2 - 2021-08-04
+
+* `Aws\EventBridge` - Documentation updates to add EC2 Image Builder as a target on PutTargets.
+* `Aws\RDS` - This release adds AutomaticRestartTime to the DescribeDBInstances and DescribeDBClusters operations. AutomaticRestartTime indicates the time when a stopped DB instance or DB cluster is restarted automatically.
+* `Aws\SSMIncidents` - Documentation updates for Incident Manager.
+* `Aws\TranscribeService` - This release adds support for call analytics (batch) within Amazon Transcribe.
+* `Aws\imagebuilder` - Updated list actions to include a list of valid filters that can be used in the request.
+
+## 3.187.1 - 2021-08-04
+
+* `Aws\` - Instance Profile Provider now has new input for IP version, taking IPv4 or IPv6.  Default behavior hasn't changed, but new defaults if IPv6 is explicitly enabled.
+* `Aws\Glue` - Add ConcurrentModificationException to create-table, delete-table, create-database, update-database, delete-database
+* `Aws\IoTSiteWise` - My AWS Service (placeholder) - This release introduces custom Intervals and offset for tumbling window in metric for AWS IoT SiteWise.
+* `Aws\MediaConvert` - AWS Elemental MediaConvert SDK has added control over the passthrough of XDS captions metadata to outputs.
+* `Aws\Proton` - Docs only add idempotent create apis
+* `Aws\Redshift` - API support for Redshift Data Sharing feature.
+
+## 3.186.4 - 2021-08-02
+
+* `Aws\GreengrassV2` - This release adds support for component system resource limits and idempotent Create operations. You can now specify the maximum amount of CPU and memory resources that each component can use.
+* `Aws\SSMContacts` - Added new attribute in AcceptCode API. AcceptCodeValidation takes in two values - ENFORCE, IGNORE. ENFORCE forces validation of accept code and IGNORE ignores it which is also the default behavior; Corrected TagKeyList length from 200 to 50
+
 ## 3.186.3 - 2021-07-30
 
 * `Aws\AppSync` - AWS AppSync now supports a new authorization mode allowing you to define your own authorization logic using an AWS Lambda function.
