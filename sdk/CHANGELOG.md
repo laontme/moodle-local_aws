@@ -1,5 +1,51 @@
 # CHANGELOG
 
+## 3.192.0 - 2021-09-03
+
+* `Aws\ChimeSDKIdentity` - Documentation updates for Chime
+* `Aws\ChimeSDKMessaging` - Documentation updates for Chime
+* `Aws\CodeGuruReviewer` - Added support for CodeInconsistencies detectors
+* `Aws\FraudDetector` - Enhanced GetEventPrediction API response to include risk scores from imported SageMaker models
+* `Aws\Outposts` - This release adds a new API CreateOrder.
+* `Aws\S3` - Added support for S3 multi-region access points
+
+## 3.191.10 - 2021-09-02
+
+* `Aws\ACMPCA` - Private Certificate Authority Service now allows customers to enable an online certificate status protocol (OCSP) responder service on their private certificate authorities. Customers can also optionally configure a custom CNAME for their OCSP responder.
+* `Aws\AccessAnalyzer` - Updates service API, documentation, and paginators to support multi-region access points from Amazon S3.
+* `Aws\EBS` - Documentation updates for Amazon EBS direct APIs.
+* `Aws\EFS` - Adds support for EFS Intelligent-Tiering, which uses EFS Lifecycle Management to monitor file access patterns and is designed to automatically transition files to and from your corresponding Infrequent Access (IA) storage classes.
+* `Aws\FSx` - Announcing Amazon FSx for NetApp ONTAP, a new service that provides fully managed shared storage in the AWS Cloud with the data access and management capabilities of ONTAP.
+* `Aws\LexModelBuildingService` - Lex now supports Korean (ko-KR) locale.
+* `Aws\QuickSight` - This release adds support for referencing parent datasets as sources in a child dataset.
+* `Aws\S3Control` - S3 Multi-Region Access Points provide a single global endpoint to access a data set that spans multiple S3 buckets in different AWS Regions.
+* `Aws\Schemas` - This update include the support for Schema Discoverer to discover the events sent to the bus from another account. The feature will be enabled by default when discoverer is created or updated but can also be opt-in or opt-out by specifying the value for crossAccount.
+* `Aws\SecurityHub` - New ASFF Resources: AwsAutoScalingLaunchConfiguration, AwsEc2VpnConnection, AwsEcrContainerImage. Added KeyRotationStatus to AwsKmsKey. Added AccessControlList, BucketLoggingConfiguration,BucketNotificationConfiguration and BucketNotificationConfiguration to AwsS3Bucket.
+* `Aws\Transfer` - AWS Transfer Family introduces Managed Workflows for creating, executing, monitoring, and standardizing post file transfer processing
+
+## 3.191.9 - 2021-09-01
+
+* `Aws\AppRegistry` - Introduction of GetAssociatedResource API and GetApplication response extension for Resource Groups support.
+* `Aws\CloudTrail` - Documentation updates for CloudTrail
+* `Aws\ConfigService` - Documentation updates for config
+* `Aws\EC2` - Added LaunchTemplate support for the IMDS IPv6 endpoint
+* `Aws\MediaTailor` - This release adds support for wall clock programs in LINEAR channels.
+
+## 3.191.8 - 2021-08-31
+
+* `Aws\ComputeOptimizer` - Documentation updates for Compute Optimizer
+* `Aws\IoT` - Added Create/Update/Delete/Describe/List APIs for a new IoT resource named FleetMetric. Added a new Fleet Indexing query API named GetBucketsAggregation. Added a new field named DisconnectedReason in Fleet Indexing query response. Updated their related documentations.
+* `Aws\MemoryDB` - Documentation updates for MemoryDB
+* `Aws\Polly` - Amazon Polly adds new South African English voice - Ayanda. Ayanda is available as Neural voice only.
+* `Aws\SQS` - Amazon SQS adds a new queue attribute, RedriveAllowPolicy, which includes the dead-letter queue redrive permission parameters. It defines which source queues can specify dead-letter queues as a JSON object.
+
+## 3.191.7 - 2021-08-30
+
+* `Aws\CloudFormation` - AWS CloudFormation allows you to iteratively develop your applications when failures are encountered without rolling back successfully provisioned resources. By specifying stack failure options, you can troubleshoot resources in a CREATE_FAILED or UPDATE_FAILED status.
+* `Aws\CodeBuild` - Documentation updates for CodeBuild
+* `Aws\Firehose` - This release adds the Dynamic Partitioning feature to Kinesis Data Firehose service for S3 destinations.
+* `Aws\KMS` - This release has changes to KMS nomenclature to remove the word master from both the "Customer master key" and "CMK" abbreviation and replace those naming conventions with "KMS key".
+
 ## 3.191.6 - 2021-08-27
 
 * `Aws\EC2` - This release adds the BootMode flag to the ImportImage API and showing the detected BootMode of an ImportImage task.
