@@ -1122,6 +1122,7 @@ $mapping = array(
     'Aws\data\amplify\2017-07-25\paginators-1.json' => __DIR__ . '/Aws/data/amplify/2017-07-25/paginators-1.json.php',
     'Aws\data\amp\2020-08-01\api-2.json' => __DIR__ . '/Aws/data/amp/2020-08-01/api-2.json.php',
     'Aws\data\amp\2020-08-01\paginators-1.json' => __DIR__ . '/Aws/data/amp/2020-08-01/paginators-1.json.php',
+    'Aws\data\amp\2020-08-01\waiters-2.json' => __DIR__ . '/Aws/data/amp/2020-08-01/waiters-2.json.php',
     'Aws\data\resourcegroupstaggingapi\2017-01-26\api-2.json' => __DIR__ . '/Aws/data/resourcegroupstaggingapi/2017-01-26/api-2.json.php',
     'Aws\data\resourcegroupstaggingapi\2017-01-26\paginators-1.json' => __DIR__ . '/Aws/data/resourcegroupstaggingapi/2017-01-26/paginators-1.json.php',
     'Aws\data\manifest.json' => __DIR__ . '/Aws/data/manifest.json.php',
