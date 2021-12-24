@@ -893,6 +893,7 @@ $mapping = array(
     'Aws\data\route53-recovery-control-config\2020-11-02\paginators-1.json' => __DIR__ . '/Aws/data/route53-recovery-control-config/2020-11-02/paginators-1.json.php',
     'Aws\data\route53-recovery-control-config\2020-11-02\api-2.json' => __DIR__ . '/Aws/data/route53-recovery-control-config/2020-11-02/api-2.json.php',
     'Aws\data\route53-recovery-control-config\2020-11-02\waiters-2.json' => __DIR__ . '/Aws/data/route53-recovery-control-config/2020-11-02/waiters-2.json.php',
+    'Aws\data\sdk-default-configuration.json' => __DIR__ . '/Aws/data/sdk-default-configuration.json.php',
     'Aws\data\iot\2015-05-28\paginators-1.json' => __DIR__ . '/Aws/data/iot/2015-05-28/paginators-1.json.php',
     'Aws\data\iot\2015-05-28\smoke.json' => __DIR__ . '/Aws/data/iot/2015-05-28/smoke.json.php',
     'Aws\data\iot\2015-05-28\api-2.json' => __DIR__ . '/Aws/data/iot/2015-05-28/api-2.json.php',
