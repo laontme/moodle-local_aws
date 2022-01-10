@@ -24,7 +24,6 @@
  */
 
 namespace local_aws\privacy;
-defined('MOODLE_INTERNAL') || die;
 
 /**
  * Class provider
