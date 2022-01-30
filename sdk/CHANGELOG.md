@@ -1,5 +1,43 @@
 # CHANGELOG
 
+## 3.209.15 - 2022-01-28
+
+* `Aws\AppConfig` - Documentation updates for AWS AppConfig
+* `Aws\AppConfigData` - Documentation updates for AWS AppConfig Data.
+* `Aws\Athena` - This release adds a field, AthenaError, to the GetQueryExecution response object when a query fails.
+* `Aws\CognitoIdentityProvider` - Doc updates for Cognito user pools API Reference.
+* `Aws\SageMaker` - This release added a new NNA accelerator compilation support for Sagemaker Neo.
+* `Aws\SecretsManager` - Feature are ready to release on Jan 28th
+
+## 3.209.14 - 2022-01-27
+
+* `Aws\Amplify` - Doc only update to the description of basicauthcredentials to describe the required encoding and format.
+* `Aws\Connect` - This release adds support for configuring a custom chat duration when starting a new chat session via the StartChatContact API. The default value for chat duration is 25 hours, minimum configurable value is 1 hour (60 minutes) and maximum configurable value is 7 days (10,080 minutes).
+* `Aws\EC2` - X2ezn instances are powered by Intel Cascade Lake CPUs that deliver turbo all core frequency of up to 4.5 GHz and up to 100 Gbps of networking bandwidth
+* `Aws\Kafka` - Amazon MSK has updated the CreateCluster and UpdateBrokerStorage API that allows you to specify volume throughput during cluster creation and broker volume updates.
+* `Aws\OpenSearchService` - Allows customers to get progress updates for blue/green deployments
+
+## 3.209.13 - 2022-01-26
+
+* `Aws\` - Update the API guide docs site to use the latest version of jquery and jquery-migrate.
+* `Aws\CodeGuruReviewer` - Added failure state and adjusted timeout in waiter
+* `Aws\EBS` - Documentation updates for Amazon EBS Direct APIs.
+* `Aws\FraudDetector` - Added new APIs for viewing past predictions and obtaining prediction metadata including prediction explanations: ListEventPredictions and GetEventPredictionMetadata
+* `Aws\SageMaker` - API changes relating to Fail steps in model building pipeline and add PipelineExecutionFailureReason in PipelineExecutionSummary.
+* `Aws\SecurityHub` - Adding top level Sample boolean field
+
+## 3.209.12 - 2022-01-25
+
+* `Aws\Connect` - This release adds support for custom vocabularies to be used with Contact Lens. Custom vocabularies improve transcription accuracy for one or more specific words.
+* `Aws\EFS` - Use Amazon EFS Replication to replicate your Amazon EFS file system in the AWS Region of your preference.
+* `Aws\FSx` - This release adds support for growing SSD storage capacity and growing/shrinking SSD IOPS for FSx for ONTAP file systems.
+* `Aws\GuardDuty` - Amazon GuardDuty expands threat detection coverage to protect Amazon Elastic Kubernetes Service (EKS) workloads.
+
+## 3.209.11 - 2022-01-24
+
+* `Aws\` - Suppress warning generated on is_readable calls to ini files
+* `Aws\Route53RecoveryReadiness` - Updated documentation for Route53 Recovery Readiness APIs.
+
 ## 3.209.10 - 2022-01-21
 
 * `Aws\MediaConvert` - AWS Elemental MediaConvert SDK has added support for 4K AV1 output resolutions & 10-bit AV1 color, the ability to ingest sidecar Dolby Vision XML metadata files, and the ability to flag WebVTT and IMSC tracks for accessibility in HLS.
