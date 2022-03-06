@@ -764,6 +764,7 @@ $mapping = array(
     'Aws\data\guardduty\2017-11-28\api-2.json' => __DIR__ . '/Aws/data/guardduty/2017-11-28/api-2.json.php',
     'Aws\data\transfer\2018-11-05\paginators-1.json' => __DIR__ . '/Aws/data/transfer/2018-11-05/paginators-1.json.php',
     'Aws\data\transfer\2018-11-05\api-2.json' => __DIR__ . '/Aws/data/transfer/2018-11-05/api-2.json.php',
+    'Aws\data\transfer\2018-11-05\waiters-2.json' => __DIR__ . '/Aws/data/transfer/2018-11-05/waiters-2.json.php',
     'Aws\data\backup-gateway\2021-01-01\paginators-1.json' => __DIR__ . '/Aws/data/backup-gateway/2021-01-01/paginators-1.json.php',
     'Aws\data\backup-gateway\2021-01-01\api-2.json' => __DIR__ . '/Aws/data/backup-gateway/2021-01-01/api-2.json.php',
     'Aws\data\iotfleethub\2020-11-03\paginators-1.json' => __DIR__ . '/Aws/data/iotfleethub/2020-11-03/paginators-1.json.php',
