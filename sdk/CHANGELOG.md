@@ -1,5 +1,38 @@
 # CHANGELOG
 
+## 3.212.7 - 2022-03-11
+
+* `Aws\Chime` - Chime VoiceConnector Logging APIs will now support MediaMetricLogs. Also CreateMeetingDialOut now returns AccessDeniedException.
+* `Aws\Connect` - This release adds support for enabling Rich Messaging when starting a new chat session via the StartChatContact API. Rich Messaging enables the following formatting options: bold, italics, hyperlinks, bulleted lists, and numbered lists.
+* `Aws\Lambda` - Adds PrincipalOrgID support to AddPermission API. Customers can use it to manage permissions to lambda functions at AWS Organizations level.
+* `Aws\Outposts` - This release adds address filters for listSites
+* `Aws\SecretsManager` - Documentation updates for Secrets Manager.
+* `Aws\TranscribeStreamingService` - Amazon Transcribe StartTranscription API now supports additional parameters for Language Identification feature: customVocabularies and customFilterVocabularies
+
+## 3.212.6 - 2022-03-10
+
+* `Aws\` - Passing null to hash_init is deprecated on PHP 8.1.
+* `Aws\LexModelsV2` - This release makes slotTypeId an optional parameter in CreateSlot and UpdateSlot APIs in Amazon Lex V2 for model building. Customers can create and update slots without specifying a slot type id.
+* `Aws\TranscribeService` - Documentation fix for API `StartMedicalTranscriptionJobRequest`, now showing min sample rate as 16khz
+* `Aws\Transfer` - Adding more descriptive error types for managed workflows
+
+## 3.212.5 - 2022-03-09
+
+* `Aws\Comprehend` - Amazon Comprehend now supports extracting the sentiment associated with entities such as brands, products and services from text documents.
+
+## 3.212.4 - 2022-03-08
+
+* `Aws\EKS` - Introducing a new enum for NodeGroup error code: Ec2SubnetMissingIpv6Assignment
+* `Aws\Endpoints` - Fixes an issue where variant tags could be resolved in an order-dependent manner
+* `Aws\Keyspaces` - Adding link to CloudTrail section in Amazon Keyspaces Developer Guide
+* `Aws\MediaConvert` - AWS Elemental MediaConvert SDK has added support for reading timecode from AVCHD sources and now provides the ability to segment WebVTT at the same interval as the video and audio in HLS packages.
+
+## 3.212.3 - 2022-03-07
+
+* `Aws\ChimeSDKMeetings` - Adds support for Transcribe language identification feature to the StartMeetingTranscription API.
+* `Aws\ECS` - Amazon ECS UpdateService API now supports additional parameters: loadBalancers, propagateTags, enableECSManagedTags, and serviceRegistries
+* `Aws\MigrationHubRefactorSpaces` - AWS Migration Hub Refactor Spaces documentation update.
+
 ## 3.212.2 - 2022-03-04
 
 * `Aws\Connect` - This release updates the *InstanceStorageConfig APIs so they support a new ResourceType: REAL_TIME_CONTACT_ANALYSIS_SEGMENTS. Use this resource type to enable streaming for real-time contact analysis and to associate the Kinesis stream where real-time contact analysis segments will be published.
