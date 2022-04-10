@@ -1348,6 +1348,7 @@ $mapping = array(
     'Aws\MediaPackage\MediaPackageClient' => __DIR__ . '/Aws/MediaPackage/MediaPackageClient.php',
     'Aws\EventBridge\Exception\EventBridgeException' => __DIR__ . '/Aws/EventBridge/Exception/EventBridgeException.php',
     'Aws\EventBridge\EventBridgeClient' => __DIR__ . '/Aws/EventBridge/EventBridgeClient.php',
+    'Aws\EventBridge\EventBridgeEndpointMiddleware' => __DIR__ . '/Aws/EventBridge/EventBridgeEndpointMiddleware.php',
     'Aws\Waf\Exception\WafException' => __DIR__ . '/Aws/Waf/Exception/WafException.php',
     'Aws\Waf\WafClient' => __DIR__ . '/Aws/Waf/WafClient.php',
     'Aws\CloudSearch\Exception\CloudSearchException' => __DIR__ . '/Aws/CloudSearch/Exception/CloudSearchException.php',
