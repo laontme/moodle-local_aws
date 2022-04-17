@@ -1,5 +1,38 @@
 # CHANGELOG
 
+## 3.219.5 - 2022-04-15
+
+* `Aws\Athena` - This release adds subfields, ErrorMessage, Retryable, to the AthenaError response object in the GetQueryExecution API when a query fails.
+* `Aws\Lightsail` - This release adds support to describe the synchronization status of the account-level block public access feature for your Amazon Lightsail buckets.
+* `Aws\RDS` - Removes Amazon RDS on VMware with the deletion of APIs related to Custom Availability Zones and Media installation
+
+## 3.219.4 - 2022-04-14
+
+* `Aws\AppStream` - Includes updates for create and update fleet APIs to manage the session scripts locations for Elastic fleets.
+* `Aws\Appflow` - Enables users to pass custom token URL parameters for Oauth2 authentication during create connector profile
+* `Aws\Batch` - Enables configuration updates for compute environments with BEST_FIT_PROGRESSIVE and SPOT_CAPACITY_OPTIMIZED allocation strategies.
+* `Aws\CloudWatch` - Updates documentation for additional statistics in CloudWatch Metric Streams.
+* `Aws\EC2` - Documentation updates for Amazon EC2.
+* `Aws\Glue` - Auto Scaling for Glue version 3.0 and later jobs to dynamically scale compute resources. This SDK change provides customers with the auto-scaled DPU usage
+
+## 3.219.3 - 2022-04-13
+
+* `Aws\CloudWatch` - Adds support for additional statistics in CloudWatch Metric Streams.
+* `Aws\FSx` - This release adds support for deploying FSx for ONTAP file systems in a single Availability Zone.
+
+## 3.219.2 - 2022-04-12
+
+* `Aws\DevOpsGuru` - This release adds new APIs DeleteInsight to deletes the insight along with the associated anomalies, events and recommendations.
+* `Aws\EC2` - X2idn and X2iedn instances are powered by 3rd generation Intel Xeon Scalable processors with an all-core turbo frequency up to 3.5 GHzAmazon EC2. C6a instances are powered by 3rd generation AMD EPYC processors.
+* `Aws\EFS` - Amazon EFS adds support for a ThrottlingException when using the CreateAccessPoint API if the account is nearing the AccessPoint limit(120).
+* `Aws\IoTTwinMaker` - This release adds the following new features: 1) ListEntities API now supports search using ExternalId. 2) BatchPutPropertyValue and GetPropertyValueHistory API now allows users to represent time in sub-second level precisions.
+
+## 3.219.1 - 2022-04-11
+
+* `Aws\AmplifyUIBuilder` - In this release, we have added the ability to bind events to component level actions.
+* `Aws\AppRunner` - This release adds tracing for App Runner services with X-Ray using AWS Distro for OpenTelemetry. New APIs: CreateObservabilityConfiguration, DescribeObservabilityConfiguration, ListObservabilityConfigurations, and DeleteObservabilityConfiguration. Updated APIs: CreateService and UpdateService.
+* `Aws\WorkSpaces` - Added API support that allows customers to create GPU-enabled WorkSpaces using EC2 G4dn instances.
+
 ## 3.219.0 - 2022-04-08
 
 * `Aws\EventBridge` - Adds sigv4 support for EventBridge putEvents calls when opt-in parameter EndpointId is specified
