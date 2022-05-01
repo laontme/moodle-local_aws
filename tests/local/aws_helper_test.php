@@ -39,6 +39,7 @@ class aws_helper_test extends advanced_testcase {
 
     /**
      * Test the proxy string.
+     * @covers \local_aws\local\aws_helper
      */
     public function test_get_proxy_string() {
         global $CFG;
@@ -58,4 +59,20 @@ class aws_helper_test extends advanced_testcase {
         $this->assertEquals('socks5://user:password@127.0.0.1:1337', \local_aws\local\aws_helper::get_proxy_string());
     }
 
+    /**
+     * Test the configure client proxy
+     * @covers \local_aws\local\aws_helper
+     * @covers \local_aws\local\client_factory
+     */
+    public function test_configure_client_proxy() {
+        $this->resetAfterTest();
+        set_config('proxyhost', '127.0.0.1');
+        set_config('proxyport', 1337);
+        set_config('proxytype', 'http');
+        set_config('proxyuser', 'user');
+        set_config('proxypassword', 'password');
+        $s3 = client_factory::get_client('\Aws\S3\S3Client', ['version' => 'latest', 'region' => 'us-west-2']);
+        aws_helper::configure_client_proxy($s3);
+        set_config('proxytype', 'SOCKS5');
+    }
 }

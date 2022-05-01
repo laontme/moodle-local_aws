@@ -68,7 +68,7 @@ class aws_helper {
      * @param AwsClient $client
      * @return AwsClient
      */
-    public static function configure_client_proxy(AwsClient $client): AwsClient {
+    public static function configure_client_proxy(\AWS\AwsClient $client): \AWS\AwsClient {
         $client->getHandlerList()->appendBuild(self::get_callable_middleware(), 'proxy_bypass');
         return $client;
     }

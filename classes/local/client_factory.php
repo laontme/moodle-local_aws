@@ -41,7 +41,7 @@ class client_factory {
      * @param array $opts array of constructor options for AWS Client.
      * @return AwsClient
      */
-    public static function get_client(string $class, array $opts): AwsClient {
+    public static function get_client(string $class, array $opts): \Aws\AwsClient {
         // Modify the opts to add HTTP timeouts.
         if (empty($opts['http'])) {
             $opts['http'] = ['connect_timeout' => HOURSECS];

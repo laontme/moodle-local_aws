@@ -1,5 +1,50 @@
 # CHANGELOG
 
+## 3.222.2 - 2022-04-29
+
+* `Aws\CodeGuruReviewer` - Amazon CodeGuru Reviewer now supports suppressing recommendations from being generated on specific files and directories.
+* `Aws\MediaConvert` - AWS Elemental MediaConvert SDK nows supports creation of Dolby Vision profile 8.1, the ability to generate black frames of video, and introduces audio-only DASH and CMAF support.
+* `Aws\RDS` - Feature - Adds support for Internet Protocol Version 6 (IPv6) on RDS database instances.
+* `Aws\SSM` - Update the StartChangeRequestExecution, adding TargetMaps to the Runbook parameter
+* `Aws\WAFV2` - You can now inspect all request headers and all cookies. You can now specify how to handle oversize body contents in your rules that inspect the body.
+
+## 3.222.1 - 2022-04-28
+
+* `Aws\AuditManager` - This release adds documentation updates for Audit Manager. We provided examples of how to use the Custom_ prefix for the keywordValue attribute. We also provided more details about the DeleteAssessmentReport operation.
+* `Aws\Braket` - This release enables Braket Hybrid Jobs with Embedded Simulators to have multiple instances.
+* `Aws\Connect` - This release introduces an API for changing the current agent status of a user in Connect.
+* `Aws\EC2` - This release adds support to query the public key and creation date of EC2 Key Pairs. Additionally, the format (pem or ppk) of a key pair can be specified when creating a new key pair.
+* `Aws\GuardDuty` - Documentation update for API description.
+* `Aws\NetworkFirewall` - AWS Network Firewall adds support for stateful threat signature AWS managed rule groups.
+
+## 3.222.0 - 2022-04-27
+
+* `Aws\Amplify` - Documentation only update to support the Amplify GitHub App feature launch
+* `Aws\ChimeSDKMediaPipelines` - For Amazon Chime SDK meetings, the Amazon Chime Media Pipelines SDK allows builders to capture audio, video, and content share streams. You can also capture meeting events, live transcripts, and data messages. The pipelines save the artifacts to an Amazon S3 bucket that you designate.
+* `Aws\CloudTrail` - Increases the retention period maximum to 2557 days. Deprecates unused fields of the ListEventDataStores API response. Updates documentation.
+* `Aws\IoTWireless` - Add list support for event configurations, allow to get and update event configurations by resource type, support LoRaWAN events; Make NetworkAnalyzerConfiguration as a resource, add List, Create, Delete API support; Add FCntStart attribute support for ABP WirelessDevice.
+* `Aws\LookoutEquipment` - This release adds the following new features: 1) Introduces an option for automatic schema creation 2) Now allows for Ingestion of data containing most common errors and allows automatic data cleaning 3) Introduces new API ListSensorStatistics that gives further information about the ingested data
+* `Aws\Rekognition` - This release adds support to configure stream-processor resources for label detections on streaming-videos. UpateStreamProcessor API is also launched with this release, which could be used to update an existing stream-processor.
+* `Aws\SageMaker` - Amazon SageMaker Autopilot adds support for custom validation dataset and validation ratio through the CreateAutoMLJob and DescribeAutoMLJob APIs.
+
+## 3.221.0 - 2022-04-26
+
+* `Aws\CloudFront` - CloudFront now supports the Server-Timing header in HTTP responses sent from CloudFront. You can use this header to view metrics that help you gain insights about the behavior and performance of CloudFront. To use this header, enable it in a response headers policy.
+* `Aws\Glue` - This release adds documentation for the APIs to create, read, delete, list, and batch read of AWS Glue custom patterns, and for Lake Formation configuration settings in the AWS Glue crawler.
+* `Aws\Lightsail` - This release adds support for Lightsail load balancer HTTP to HTTPS redirect and TLS policy configuration.
+* `Aws\NetworkFirewall` - AWS Network Firewall now enables customers to use a customer managed AWS KMS key for the encryption of their firewall resources.
+* `Aws\Pricing` - Documentation updates for Price List API
+* `Aws\SageMaker` - SageMaker Inference Recommender now accepts customer KMS key ID for encryption of endpoints and compilation outputs created during inference recommendation.
+* `Aws\ivschat` - Adds new APIs for IVS Chat, a feature for building interactive chat experiences alongside an IVS broadcast.
+
+## 3.220.4 - 2022-04-25
+
+* `Aws\Connect` - This release adds SearchUsers API which can be used to search for users with a Connect Instance
+* `Aws\GameLift` - Documentation updates for Amazon GameLift.
+* `Aws\MQ` - This release adds the CRITICAL_ACTION_REQUIRED broker state and the ActionRequired API property. CRITICAL_ACTION_REQUIRED informs you when your broker is degraded. ActionRequired provides you with a code which you can use to find instructions in the Developer Guide on how to resolve the issue.
+* `Aws\RDSDataService` - Support to receive SQL query results in the form of a simplified JSON string. This enables developers using the new JSON string format to more easily convert it to an object using popular JSON string parsing libraries.
+* `Aws\SecurityHub` - Security Hub now lets you opt-out of auto-enabling the defaults standards (CIS and FSBP) in accounts that are auto-enabled with Security Hub via Security Hub's integration with AWS Organizations.
+
 ## 3.220.3 - 2022-04-22
 
 * `Aws\ChimeSDKMeetings` - Include additional exceptions types.
