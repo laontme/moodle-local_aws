@@ -25,6 +25,11 @@
 
 namespace local_aws\local;
 
+defined('MOODLE_INTERNAL') || die;
+
+global $CFG;
+require_once($CFG->dirroot . '/local/aws/sdk/aws-autoloader.php');
+
 use advanced_testcase;
 
 /**
