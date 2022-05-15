@@ -829,6 +829,7 @@ $mapping = array(
     'Aws\data\mturk-requester\2017-01-17\smoke.json' => __DIR__ . '/Aws/data/mturk-requester/2017-01-17/smoke.json.php',
     'Aws\data\mturk-requester\2017-01-17\api-2.json' => __DIR__ . '/Aws/data/mturk-requester/2017-01-17/api-2.json.php',
     'Aws\data\cloudcontrol\2021-09-30\paginators-1.json' => __DIR__ . '/Aws/data/cloudcontrol/2021-09-30/paginators-1.json.php',
+    'Aws\data\cloudcontrol\2021-09-30\smoke.json' => __DIR__ . '/Aws/data/cloudcontrol/2021-09-30/smoke.json.php',
     'Aws\data\cloudcontrol\2021-09-30\api-2.json' => __DIR__ . '/Aws/data/cloudcontrol/2021-09-30/api-2.json.php',
     'Aws\data\cloudcontrol\2021-09-30\waiters-2.json' => __DIR__ . '/Aws/data/cloudcontrol/2021-09-30/waiters-2.json.php',
     'Aws\data\cognito-idp\2016-04-18\paginators-1.json' => __DIR__ . '/Aws/data/cognito-idp/2016-04-18/paginators-1.json.php',
