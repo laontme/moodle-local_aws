@@ -1,5 +1,39 @@
 # CHANGELOG
 
+## 3.222.17 - 2022-05-20
+
+* `Aws\CloudWatchLogs` - Doc-only update to publish the new valid values for log retention
+* `Aws\Comprehend` - Comprehend releases 14 new entity types for DetectPiiEntities and ContainsPiiEntities APIs.
+
+## 3.222.16 - 2022-05-19
+
+* `Aws\GameSparks` - This release adds an optional DeploymentResult field in the responses of GetStageDeploymentIntegrationTests and ListStageDeploymentIntegrationTests APIs.
+* `Aws\LookoutMetrics` - In this release we added SnsFormat to SNSConfiguration to support human readable alert.
+
+## 3.222.15 - 2022-05-18
+
+* `Aws\AppMesh` - This release updates the existing Create and Update APIs for meshes and virtual nodes by adding a new IP preference field. This new IP preference field can be used to control the IP versions being used with the mesh and allows for IPv6 support within App Mesh.
+* `Aws\Batch` - Documentation updates for AWS Batch.
+* `Aws\GreengrassV2` - This release adds the new DeleteDeployment API operation that you can use to delete deployment resources. This release also adds support for discontinued AWS-provided components, so AWS can communicate when a component has any issues that you should consider before you deploy it.
+* `Aws\IoTEventsData` - Introducing new API for deleting detectors: BatchDeleteDetector.
+* `Aws\QuickSight` - API UpdatePublicSharingSettings enables IAM admins to enable/disable account level setting for public access of dashboards. When enabled, owners/co-owners for dashboards can enable public access on their dashboards. These dashboards can only be accessed through share link or embedding.
+* `Aws\Transfer` - AWS Transfer Family now supports SetStat server configuration option, which provides the ability to ignore SetStat command issued by file transfer clients, enabling customers to upload files without any errors.
+
+## 3.222.14 - 2022-05-17
+
+* `Aws\Glue` - This release adds a new optional parameter called codeGenNodeConfiguration to CRUD job APIs that allows users to manage visual jobs via APIs. The updated CreateJob and UpdateJob will create jobs that can be viewed in Glue Studio as a visual graph. GetJob can be used to get codeGenNodeConfiguration.
+* `Aws\KMS` - Add HMAC best practice tip, annual rotation of AWS managed keys.
+
+## 3.222.13 - 2022-05-16
+
+* `Aws\ApplicationDiscoveryService` - Add Migration Evaluator Collector details to the GetDiscoverySummary API response
+* `Aws\CloudFront` - Introduced a new error (TooLongCSPInResponseHeadersPolicy) that is returned when the value of the Content-Security-Policy header in a response headers policy exceeds the maximum allowed length.
+* `Aws\Rekognition` - Documentation updates for Amazon Rekognition.
+* `Aws\ResilienceHub` - In this release, we are introducing support for Amazon Elastic Container Service, Amazon Route 53, AWS Elastic Disaster Recovery, AWS Backup in addition to the existing supported Services. This release also supports Terraform file input from S3 and scheduling daily assessments
+* `Aws\STS` - Documentation updates for AWS Security Token Service.
+* `Aws\ServiceCatalog` - Updated the descriptions for the ListAcceptedPortfolioShares API description and the PortfolioShareType parameters.
+* `Aws\WorkSpacesWeb` - Amazon WorkSpaces Web now supports Administrator timeout control
+
 ## 3.222.12 - 2022-05-13
 
 * `Aws\ManagedGrafana` - This release adds APIs for creating and deleting API keys in an Amazon Managed Grafana workspace.
