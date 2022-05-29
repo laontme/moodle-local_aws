@@ -1,5 +1,45 @@
 # CHANGELOG
 
+## 3.224.0 - 2022-05-27
+
+* `Aws\` - Removed `EMRServerlessWebService`, which was released with an incorrect name
+* `Aws\Appflow` - Adding the following features/changes: Parquet output that preserves typing from the source connector, Failed executions threshold before deactivation for scheduled flows, increasing max size of access and refresh token from 2048 to 4096
+* `Aws\DataSync` - AWS DataSync now supports TLS encryption in transit, file system policies and access points for EFS locations.
+* `Aws\EMRServerless` - This release adds support for Amazon EMR Serverless, a serverless runtime environment that simplifies running analytics applications using the latest open source frameworks such as Apache Spark and Apache Hive.
+* `Aws\SageMaker` - Amazon SageMaker Notebook Instances now allows configuration of Instance Metadata Service version and Amazon SageMaker Studio now supports G5 instance types.
+
+## 3.223.0 - 2022-05-26
+
+* `Aws\` - Add missing PHPDoc annotation for PromiseInterface implementations.
+* `Aws\EC2` - C7g instances, powered by the latest generation AWS Graviton3 processors, provide the best price performance in Amazon EC2 for compute-intensive workloads.
+* `Aws\ForecastService` - Introduced a new field in Auto Predictor as Time Alignment Boundary. It helps in aligning the timestamps generated during Forecast exports
+* `Aws\Lightsail` - Amazon Lightsail now supports the ability to configure a Lightsail Container Service to pull images from Amazon ECR private repositories in your account.
+
+## 3.222.20 - 2022-05-25
+
+* `Aws\APIGateway` - Documentation updates for Amazon API Gateway
+* `Aws\AppRunner` - Documentation-only update added for CodeConfiguration.
+* `Aws\CloudFormation` - Add a new parameter statusReason to DescribeStackSetOperation output for additional details
+* `Aws\FSx` - This release adds root squash support to FSx for Lustre to restrict root level access from clients by mapping root users to a less-privileged user/group with limited permissions.
+* `Aws\LookoutMetrics` - Adding AthenaSourceConfig for MetricSet APIs to support Athena as a data source.
+* `Aws\SageMaker` - Amazon SageMaker Autopilot adds support for manually selecting features from the input dataset using the CreateAutoMLJob API.
+* `Aws\SecretsManager` - Documentation updates for Secrets Manager
+* `Aws\VoiceID` - VoiceID will now automatically expire Speakers if they haven't been accessed for Enrollment, Re-enrollment or Successful Auth for three years. The Speaker APIs now return a "LastAccessedAt" time for Speakers, and the EvaluateSession API returns "SPEAKER_EXPIRED" Auth Decision for EXPIRED Speakers.
+
+## 3.222.19 - 2022-05-24
+
+* `Aws\CognitoIdentityProvider` - Amazon Cognito now supports requiring attribute verification (ex. email and phone number) before update.
+* `Aws\EC2` - Stop Protection feature enables customers to protect their instances from accidental stop actions.
+* `Aws\MediaConvert` - AWS Elemental MediaConvert SDK has added support for rules that constrain Automatic-ABR rendition selection when generating ABR package ladders.
+* `Aws\NetworkManager` - This release adds Multi Account API support for a TGW Global Network, to enable and disable AWSServiceAccess with AwsOrganizations for Network Manager service and dependency CloudFormation StackSets service.
+* `Aws\ivschat` - Doc-only update. For MessageReviewHandler structure, added timeout period in the description of the fallbackResult field
+
+## 3.222.18 - 2022-05-23
+
+* `Aws\ElastiCache` - Added support for encryption in transit for Memcached clusters. Customers can now launch Memcached cluster with encryption in transit enabled when using Memcached version 1.6.12 or later.
+* `Aws\ForecastService` - New APIs for Monitor that help you understand how your predictors perform over time.
+* `Aws\Personalize` - Adding modelMetrics as part of DescribeRecommender API response for Personalize.
+
 ## 3.222.17 - 2022-05-20
 
 * `Aws\CloudWatchLogs` - Doc-only update to publish the new valid values for log retention
