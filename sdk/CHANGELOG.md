@@ -1,5 +1,30 @@
 # CHANGELOG
 
+## 3.224.3 - 2022-06-02
+
+* `Aws\ApplicationInsights` - Provide Account Level onboarding support through CFN/CLI
+* `Aws\CodeArtifact` - Documentation updates for CodeArtifact
+* `Aws\Connect` - This release adds the following features: 1) New APIs to manage (create, list, update) task template resources, 2) Updates to startTaskContact API to support task templates, and 3) new TransferContact API to programmatically transfer in-progress tasks via a contact flow.
+* `Aws\Proton` - Add new "Components" API to enable users to Create, Delete and Update AWS Proton components.
+* `Aws\VoiceID` - Added a new attribute ServerSideEncryptionUpdateDetails to Domain and DomainSummary.
+* `Aws\kendra` - Amazon Kendra now provides a data source connector for GitHub. For more information, see https://docs.aws.amazon.com/kendra/latest/dg/data-source-github.html
+
+## 3.224.2 - 2022-06-01
+
+* `Aws\BackupGateway` - Adds GetGateway and UpdateGatewaySoftwareNow API and adds hypervisor name to UpdateHypervisor API
+* `Aws\ChimeSDKMeetings` - Adds support for centrally controlling each participant's ability to send and receive audio, video and screen share within a WebRTC session. Attendee capabilities can be specified when the attendee is created and updated during the session with the new BatchUpdateAttendeeCapabilitiesExcept API.
+* `Aws\ForecastService` - Added Format field to Import and Export APIs in Amazon Forecast. Added TimeSeriesSelector to Create Forecast API.
+* `Aws\Route53` - Add new APIs to support Route 53 IP Based Routing
+
+## 3.224.1 - 2022-05-31
+
+* `Aws\CognitoIdentityProvider` - Amazon Cognito now supports IP Address propagation for all unauthenticated APIs (e.g. SignUp, ForgotPassword).
+* `Aws\IoTSiteWise` - This release adds the following new optional field to the IoT SiteWise asset resource: assetDescription.
+* `Aws\LookoutMetrics` - Adding backtest mode to detectors using the Cloudwatch data source.
+* `Aws\SageMaker` - Amazon SageMaker Notebook Instances now support Jupyter Lab 3.
+* `Aws\TranscribeService` - Amazon Transcribe now supports automatic language identification for multi-lingual audio in batch mode.
+* `Aws\drs` - Changed existing APIs and added new APIs to accommodate using multiple AWS accounts with AWS Elastic Disaster Recovery.
+
 ## 3.224.0 - 2022-05-27
 
 * `Aws\` - Removed `EMRServerlessWebService`, which was released with an incorrect name
